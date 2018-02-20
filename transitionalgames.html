@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    /* Rotate div */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari 3-8 */
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-out;
+    /*transition takes a property, timing, speed-curve of the transition(same as transition-timing-function: )*/
+}
+
+div:hover{
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari 3-8 */
+    transform: rotate(90deg);
+}
+
+</style>
+
+<script>
+var scaleBtn = document.querySelector('[data-toggle-scale]');
+var rotateBtn = document.querySelector('[data-toggle-rotate]');
+var skewBtn = document.querySelector('[data-toggle-skew]');
+var translateBtn = document.querySelector('[data-toggle-translate]');
+var colorBtn = document.querySelector('[data-toggle-color]');
+
+var target = document.querySelector('[data-target]');
+
+scaleBtn.addEventListener('click', function () {
+  target.classList.toggle('scale'); 
+});
+
+rotateBtn.addEventListener('click', function () {
+  target.classList.toggle('rotate'); 
+});
+
+skewBtn.addEventListener('click', function () {
+  target.classList.toggle('skew'); 
+});
+
+translateBtn.addEventListener('click', function () {
+  target.classList.toggle('translate'); 
+});
+
+colorBtn.addEventListener('click', function () {
+  target.classList.toggle('red'); 
+});
+
+
+</script>
+</head>
+<body>
+
+<div>Hello</div>
+<br>
+
+<p><b>Note:</b> Internet Explorer 9 supports an alternative, the -ms-transform property. IE10+ support the transform property (do not need the ms prefix).</p>
+<input type="button" value="scale" data-toggle-scale>
+<input type="button" value="rotate" data-toggle-rotate>
+<input type="button" value="skew" data-toggle-skew>
+<input type="button" value="translate" data-toggle-translate>
+
+<input type="button" value="color" data-toggle-color>
+
+
+<div data-target></div>
+</body>
+</html>
