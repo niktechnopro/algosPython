@@ -34,21 +34,18 @@ var getPrimes = function(num) {
 
 function getFactors(num) {
   num = parseInt(num);
-  var remainder = num;
   var factors = [];
-  var primeNumbers = getPrimes(num).slice(1);
-  while(!isPrime(remainder)) {
-    for (var i = 0; i < primeNumbers.length; i++) {
-      var currentNum = primeNumbers[i];
-      if (remainder % currentNum === 0) {
-        factors.push(currentNum);
-        remainder = remainder / currentNum;
+  var primeNumbers = getPrimes(num);
+  while(!isPrime(num)) {
+    for (var i = 1; i < primeNumbers.length; i++) {
+      if (num % primeNumbers[i] === 0) {
+        factors.push(primeNumbers[i]);
+        num = num / primeNumbers[i];
         break;
       }
     }
   }
-
-  factors.push(remainder);
+  factors.push(num);
   console.log(`${num} => ${factors.join(', ')}`);
 }
 

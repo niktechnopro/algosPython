@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cats</title>
+	<style>
+		.body-container {
+		  display: flex;
+		  flex-direction: column;
+		}
+		.nav-container {
+		  display: flex;
+		  justify-content: space-evenly;
+		  align-items: center;
+		  height: 20%; 
+		  background-color: lightgrey;
+		/*   padding: 40px; */
+		}
+		.nav-item {
+		  display: block; 
+		  height: 50px;
+		  width: 50px;
+		}
+		/* 
+		Proportionally adapt image to its container.
+		That is, assume container controls the actual size.
+		*/
+		img {
+		  width: 100%;
+		}
+		.content {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  height: 80%;
+		}
+		.main-image {
+		  display: block;
+		  width: 45%;
+		  height: 45%;
+		}
+	</style>
+</head>
+<body>
+	<div class="body-container">
+	  <div class="nav-container">
+	    <a data-nav-item class="nav-item">
+	    </a>
+	    <a data-nav-item class="nav-item">
+	    </a>
+	    <a data-nav-item class="nav-item" >
+	    </a>
+	  </div>  
+	  <div class="content">
+	    <div class="main-image">
+	      <!-- <img data-target src="https://blogs-images.forbes.com/clareoconnor/files/2017/09/grumpy-cat-GettyImages-519250942-1200x800.jpg?width=960" alt="so grumpy"> -->
+	    </div>
+	  </div>
+	</div>
+	<script>
+		var images = ["https://blogs-images.forbes.com/clareoconnor/files/2017/09/grumpy-cat-GettyImages-519250942-1200x800.jpg?width=960", "https://i.ytimg.com/vi/DM9cV1fF518/maxresdefault.jpg", "https://timedotcom.files.wordpress.com/2015/05/saiga.jpg?quality=85"]
+
+
+		var IMG_SEL = "[data-target]";
+
+		var navItems = document.querySelectorAll("[data-nav-item]");
+		// main_image.src = images[1]
+
+		// appending the main image
+		let image_element = document.createElement("img");
+		var main_target = document.getElementsByClassName("main-image")[0]
+		main_target.appendChild(image_element)
+		image_element.src = images[1]
+		image_element.setAttribute('data-target','')
+		var imgTarget = document.querySelector(IMG_SEL);
+
+		navItems.forEach(function (nav, index) {
+			let image_element = document.createElement("img");
+			navItems[index].appendChild(image_element)
+			image_element.src = images[index]
+			image_element.setAttribute('alt', 'some image')
+		  	nav.addEventListener('click', function (event) {
+		  		event.preventDefault();
+		  		let image = event.target.src
+		  		console.log(event.target.src)
+		    // imgTarget.setAttribute('src', nav.getAttribute('href'));
+		        imgTarget.setAttribute('src', image)
+		  })
+		});
+	</script>
+	
+</body>
+</html>
