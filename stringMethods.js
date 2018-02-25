@@ -34,3 +34,22 @@ function vowelsAndConsonants(s) {
 }
 
 console.log(vowelsAndConsonants('javascriptloops'))
+
+
+//and with accounting for uppercase and spaces if any
+// function vowelsAndConsonants(s) {
+// 	s = s.toLowerCase();
+//     const vowels = "aeiou";
+//     let consonants = "";
+
+//     for(let i=0; i<s.length; i++){
+//       if (s[i] != ' '){
+//     	if(!vowels.includes(s[i])){
+//     		  consonants += s[i] + "\n"; 
+//       	} else {
+//     		  console.log(s[i]);
+//     	}
+//       }
+//     }
+//    console.log(consonants);
+// };
