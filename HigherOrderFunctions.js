@@ -1,5 +1,5 @@
-let array = [1,3,5,8,9,10]
-// let array = ['bob', 'marley', 'john', 'jovi']
+//let array = [1,3,5,8,9,10]
+let array = ['bob', 'marley', 'john', 'jovi']
 
 
 function helper(num){
