@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>JS-TIMER</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" href="timer.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+    	<h3>this timer was a small class project with <a target = "_blank" href="https://github.com/itzik415">Itzik Shaoulian</a></h3>
+        <h1>JS-TIMER</h1>
+        <form>
+            <h2>Select your time:</h2>
+            <ul>    
+                <li>
+                    <h3>Minutes</h3>
+                    <input id="timeChoseMinutes" type="number" value="0" min="0" max="60" placeholder="enter minutes" required>
+                </li>
+                <li>
+                    <h3>Seconds</h3>
+                    <input id="timeChoseSeconds" type="number" value="0" min="0" max="60" placeholder="enter seconds" required>
+                </li>
+            </ul>
+            <button type="button" id="submitButton">Submit</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+        <div id="big-id">
+            <div id="timerMinutes">00</div>
+            <h4>:</h4>
+            <div id="timerSeconds">00</div>
+        </div>
+        <script text="text/javascript" src="timer.js"></script>
+    </body>
+    
+</html>
+
+
+
