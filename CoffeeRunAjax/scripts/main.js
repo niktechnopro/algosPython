@@ -104,9 +104,10 @@ function deleteFromServer(keytodelete){//delete order function
     let deleteURL = URL+'/'+keytodelete;
     $.ajax({
         url: deleteURL,
-        method: 'DELETE'
-    }, function(resp){
-        console.log(resp)
+        method: 'DELETE',
+        success: function(resp){
+                    console.log('response from DELETE method', resp)
+                }
     })
 }
 
