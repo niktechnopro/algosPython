@@ -15,10 +15,13 @@ reset.addEventListener('click', orderFormReset);
 var orders = new Array();
 
 //checking for info on server and fetching the data
-var promiseOne = $.get(URL)
+var promiseOne = fetch(URL)
+.then(response=>response.json())
+.then(data=> orderRetrieval(data))
+.catch(error=>console.log(error))
+
 console.log(promiseOne)
-    // orderRetrieval(data);
-promiseOne.then(result => orderRetrieval(result))
+// orderRetrieval(data);
 
 
 function validation(e){//validation for coffeeOrder and Email
@@ -46,7 +49,7 @@ function orderReader(){
     let order = {}; //object to hold the order
     console.log('submit button pressed');//sanity check
     let fields = $('form').serializeArray();//this reads all info from form fields
-    console.log(fields)// and returns it as an array
+    // console.log(fields)// and returns it as an array
     form.reset(); // reset all fields after reading them
     fields.forEach((value, index)=>{
         order[value.name] = value.value;//creating an object with our order
@@ -71,7 +74,7 @@ function orderPublisher(order){
         console.log(pointer)
         orders.forEach((val, i)=>{ //to remove the right index from orders array
             if (val.coffee == pointer){
-                ulelement.style.backgroundColor = 'green';
+                ulelement.style.backgroundColor = 'lightgreen';
                 deleteFromServer(orders[i].emailAddress).then(function(){
                     elementRemove(ulelement);
                 }).then(function(){
@@ -90,28 +93,35 @@ function orderPublisher(order){
 }
 
 function toServer(order){
-    console.log('to server initiated', order)
-    var promiseTwo = $.post(URL, order)
-    // console.log(promiseTwo)
-    promiseTwo.then(response => orderPublisher(response))   
+    // console.log('to server initiated', order)
+    data = JSON.stringify(order);
+    var promiseTwo = fetch(URL,{
+        method: 'POST',
+        headers: new Headers({ //constructor-creates new headers
+            'Content-Type': 'application/json'
+            }),
+        body: data
+        })
+    console.log(promiseTwo)
+    promiseTwo.then(response => response.json())//.json()-parses response to json
+    .then(data => orderPublisher(data))
+    .catch(error => console.log(error)) 
+    //aparently unlike AJAX - it does not retrieve request from server, but
+    //returns just what I put in. Also it needs data to be
+    //JSON stringified, while AJAX does it automatically  
 }
 
 function deleteFromServer(keytodelete){//delete order function
     console.log('delete function fired up', keytodelete);
     let deleteURL = URL+'/'+keytodelete;
-    return $.ajax({ //we need to use 'return' to return the promise
-        url: deleteURL,
-        method: 'DELETE',
-        success: function(resp){
-                    console.log('response from DELETE method', resp)
-                }
-    })
+    return fetch(deleteURL,{
+            method: 'DELETE'
+        })
 }
 
 function orderRetrieval(data){
     let keys = Object.keys(data);
     keys.forEach((key)=>{
-        // console.log(data[key].coffee)
         orderPublisher(data[key]);
     })
 }
