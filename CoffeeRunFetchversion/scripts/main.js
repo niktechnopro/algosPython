@@ -106,8 +106,7 @@ function toServer(order){
     promiseTwo.then(response => response.json())//.json()-parses response to json
     .then(data => orderPublisher(data))
     .catch(error => console.log(error)) 
-    //aparently unlike AJAX - it does not retrieve request from server, but
-    //returns just what I put in. Also it needs data to be
+    // it needs data to be
     //JSON stringified, while AJAX does it automatically  
 }
 
