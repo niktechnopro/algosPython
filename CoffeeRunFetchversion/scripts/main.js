@@ -93,8 +93,8 @@ function orderPublisher(order){
 }
 
 function toServer(order){
-    // console.log('to server initiated', order)
-    data = JSON.stringify(order);
+    console.log('to server initiated', order)
+    let data = JSON.stringify(order);
     var promiseTwo = fetch(URL,{
         method: 'POST',
         headers: new Headers({ //constructor-creates new headers
