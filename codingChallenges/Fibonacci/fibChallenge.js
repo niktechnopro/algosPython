@@ -6,7 +6,8 @@
 var fib = function(n) {
   //so a=0, b=1; and c is an element we are interested in
   var a = 0, b = 1, c;
-  if(n == 1) c = 0;
+  if (n < 0) c = "must be 0 or positive number";
+  else if(n == 1) c = 0;
   else if(n <= 2) c = 1;
   else{
     for (let i = 3; i<=n; i++){
