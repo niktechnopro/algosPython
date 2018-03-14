@@ -12,14 +12,14 @@ function validation(){
             $(this).val('').css('color', 'black')
        	})
     }else{
-    	let ulel = document.querySelector('ul')
+    	let ulel = document.querySelector('ul');
     	if (ulel){
-    		console.log('removing <ul> ulelement')
+    		console.log('removing <ul> ulelement');
     		ulel.remove();
     	} 
     	let count = getCount(userInput);
-    	presentation(count, userInput)
-    	$('[name="inputText"]').val('').css('color', 'black')
+    	presentation(count, userInput);
+    	$('[name="inputText"]').val('').css('color', 'black');
     }
 }
 
@@ -64,7 +64,7 @@ function presentation(count, userInput){
         let textRow = document.createTextNode(`'${key}' => ${count[key]}`)
         liElement.appendChild(textRow);
     })
-      
+
 }
 
 
