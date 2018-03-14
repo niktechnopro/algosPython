@@ -52,3 +52,14 @@ h1{
 	cursor: pointer;
 }
 
+ul{
+	text-align: center;
+	list-style-type: none; 
+}
+
+ul, ul li{
+	font-size: 2rem;
+	font-weight: 200;
+	margin-left: -1.5rem;
+}
+
