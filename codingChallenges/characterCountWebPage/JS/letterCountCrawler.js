@@ -63,7 +63,8 @@ function presentation(count, userInput){
         ulElement.appendChild(liElement);
         let textRow = document.createTextNode(`'${key}' => ${count[key]}`)
         liElement.appendChild(textRow);
-    })  
+    })
+      
 }
 
 
