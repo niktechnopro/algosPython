@@ -7,8 +7,18 @@
     
     
     <style>
+        html{
+            padding: 0;
+            margin: 0;
+        }
+
         body{
             font-size: 16px;
+            background-image: url("./images/bckg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         
         a{
@@ -46,6 +56,10 @@
             text-align: justify;
             font-weight: 400;
             font-size: 2rem;
+        }
+
+        [data-frame] p{
+            text-align: center;
         }
 
         article{
@@ -116,19 +130,23 @@
         var link = document.querySelector('[data-link]');
         var image = document.querySelector('[data-pic]');
         var iframe = document.createElement('iFrame');
-        var main = document.querySelector('[name="bigPic"]')
-        link.addEventListener('click', youTube)
+        var main = document.querySelector('[name="bigPic"]');
+        var pEl = document.createElement('p');
+        var text = document.createTextNode("Click on 'amazing story' link again to comeback to picture mode");
+        link.addEventListener('click', youTube);
         var count = 1;
         function youTube(){
             if (count % 2 != 0){
-                image.classList.add('hide')
-                mainImage.appendChild(iframe)
-                iframe.setAttribute('src', 'https://www.youtube.com/embed/wJPRj19OU-w?autoplay=1')
-                iframe.setAttribute('allowFullScreen', '')
-                
+                image.classList.add('hide');
+                mainImage.appendChild(iframe);
+                iframe.setAttribute('src', 'https://www.youtube.com/embed/wJPRj19OU-w?autoplay=1');
+                iframe.setAttribute('allowFullScreen', '');
+                mainImage.appendChild(pEl);
+                pEl.appendChild(text);
             }else{
-                mainImage.removeChild(iframe)
-                image.classList.remove('hide')
+                mainImage.removeChild(iframe);
+                mainImage.removeChild(pEl);
+                image.classList.remove('hide');
                 main.setAttribute('src', "https://www.greatestphysiques.com/wp-content/uploads/2016/09/Arnold-Schwarzenegger-1r4-694x1024.jpg")
             }
             count ++;

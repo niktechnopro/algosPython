@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Portfolio Page for freecodecamp</title>
 	<link rel="stylesheet" href="CSS/styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="wrapper">
@@ -11,12 +12,12 @@
 	<!-- navbar section -->
 	<div id="navbar">
 		<nav id="me">
-			<a>niktechnopro</a>
+			<a>Nikolas</a>
 		</nav>
 		<nav class="navigation">
-			<a href="#aboutme">About Me</a>
-			<a href="#portfolio">Portfolio</a> 
-			<a href="#contact">Contact</a>
+			<a class="scroll" href="#aboutme">About</a>
+			<a class="scroll" href="#portfolio">Portfolio</a> 
+			<a class="scroll" href="#contact">Contact</a>
 		</nav>
 	</div>
 	<!-- navbar section -->
@@ -58,21 +59,34 @@
 		</div>
 		<div class="rightsection">
 			<p>Contact Form</p>
-			<input type='text' name="name" />
+			<input type='text' name="name" placeholder="name" />
 			<br>
-			<input type="email" name="email" />
+			<input type="email" name="email" placeholder="email" />
 			<br>
-			<input id="textarea" type="textarea" name="message" />
+			<input id="textarea" type="textarea" rows="4" name="message" placeholder="how can I help you?" />
 			<br>
 			<input type='submit' name='button' />
 		</div>
 	</div>
-		
+	<div id="contact_bottom">
+			<p>Find me on:</p>
+			<hr />
+			<ul>
+				<li><i class="fa fa-linkedin"></i></li>
+				<li><i class="fa fa-twitter"></i></li>
+				<li><i class="fa fa-github"></i></li>
+				<li><i class="fa fa-flickr"></i></li>
+			</ul>
+			<hr />
+	</div>
+	<p><a class="scroll" href="#wrapper">back to top</a></p>	
 	</section>
 
 	<footer>
-		flex box practice project 2018
+		flex box practice portfolio project 2018
 	</footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="JS/script.js"></script>
 </body>
 </html>

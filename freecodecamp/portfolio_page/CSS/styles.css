@@ -4,11 +4,13 @@ body{
 	padding: 0;
 	background-image: url('../images/bckg.jpg');
 	background-size: cover;/*to stretch for full screen*/
-}
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
 
 #wrapper{
 	display: flex;
-	/*flex-wrap: nowrap;*/
 	min-height: 100vh;
 	flex-direction: column;	
 }
@@ -41,7 +43,7 @@ body{
 a{
 	font-size: 1.5rem;
 	text-decoration: none;
-	padding: 1rem;
+	padding: 0.5rem;
 	color: white;
 }
 
@@ -73,6 +75,8 @@ section p{
 
 .topsection img{
 	align-self: center;/*to make sure the image is not squashed*/
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	padding: 2px;
 	border: 1px;
@@ -102,6 +106,8 @@ hr{
 
 #projects img{
 	padding: 2rem;
+	width: 350px;
+	height: 250px;
 }
 /*end of portfolio section*/
 
@@ -134,17 +140,33 @@ hr{
 	height: 2rem;
 	border-radius: 1rem;
 	outline: none;
-	/*background-color: transparent;*/
+	font-size: 1.1rem;
+}
+
+.rightsection input:focus {
+	text-align: center;
 }
 
 [type="submit"]{
 	width: 25%;
 	margin: 0 auto;
 	cursor: pointer;
+	box-shadow: 0px 1px 3px black;
+	cursor: pointer;
+	transition: 300ms;
+}
+
+[type="submit"]:hover {
+	background-color: lightgreen;
 }
 
 #textarea{
 	height: 4rem;
+}
+
+::-webkit-input-placeholder{
+	font-size: 1.2rem;
+	text-align: center;
 }
 
 .leftsection article{
@@ -156,6 +178,47 @@ hr{
 section{
 	border-radius: 1rem;
 }
+
+#contact_bottom{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#contact_bottom ul{
+	list-style: none;
+	display: inline;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+
+i.fa{
+	display: inline-block;
+    border-radius: 48px;
+    box-shadow: 0px 1px 3px black;
+    padding: 0.3rem 1rem;
+    transition: 300ms;
+}
+
+.fa{
+	font-size: 36px !important;
+}
+
+i.fa:hover {
+	box-shadow: 0px 0px 0px white;
+	cursor: pointer;
+}
+
+p .scroll{
+	color: black;
+}
+
+p .scroll:hover {
+	color: white;
+}
+
 /*footer*/
 footer{
 	/*the following sticks footer on the bottom*/
@@ -172,6 +235,14 @@ footer{
   }
   a{
   	font-size: 2rem;
+  	padding: 1.5rem;
+  }
+  li{
+  	display: inline;
+  	padding: 2rem;
+  }
+  #contact_bottom ul{
+  	justify-content: center;
   }
 }
 
