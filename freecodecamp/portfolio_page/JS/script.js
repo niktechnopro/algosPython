@@ -1,5 +1,6 @@
 console.log('sanity check');
 $(document).ready(function(){
+	var headerHeight = $('#navbar').outerHeight(); //header height
   // Add smooth scrolling to all links
   $(".scroll").on('click', function(event) {
   	console.log('someone clicked on navigation link');
@@ -13,6 +14,8 @@ $(document).ready(function(){
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      console.log($(hash).offset().top, headerHeight)
+
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 600, function(){
