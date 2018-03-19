@@ -42,13 +42,14 @@ function fetcher(userInput){
 	    throw new Error( 'Network response was not ok: ' + response.statusText );
 	} ).then( function ( data ) {
     	// do something with data
+    	console.log(data)
     	let pagess = data.query.pages;
     	parsingData(pagess, userInput);
 	});
 }
 
 function parsingData(pagess, userInput){
-	console.log(pagess)
+	// console.log(pagess)
 	let fullString = '';
 	let keys = Object.keys(pagess)
     	console.log(keys)

@@ -34,7 +34,7 @@ function fetching(userInput){
 }
 
 function parser(data){
-    var parser = new DOMParser();
+    var parser = new DOMParser();//reassembles DOM from string
     var doc = parser.parseFromString(data, "text/html");
     console.log(doc);
 }
