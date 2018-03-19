@@ -6,7 +6,7 @@
 var fib = function(n) {
   //so a=0, b=1; and c is an element we are interested in
   var first = 0, second = 1, current;
-  if (n < 0) c = "must be 0 or positive number";
+  if (n < 0) current = "must be 0 or positive number";
   else if(n == 1) current = 0;
   else if(n <= 2) current = 1;
   else{
