@@ -4,14 +4,14 @@
 
 
 var fib = function(n) {
-  //so a=0, b=1; and c is an element we are interested in
+  //so a=0, b=1; and current is an element we are interested in
   var first = 0, second = 1, current;
-  if (n < 0) current = "must be 0 or positive number";
+  if (n < 0) current = "must be >0";
   else if(n == 1) current = 0;
   else if(n <= 2) current = 1;
   else{
     for (let i = 3; i<=n; i++){
-      current = first + second; // the next number is sequence is a sum of 2 previous numbers
+      current = first + second; // the next number in sequence is a sum of 2 previous numbers
       first = second;
       second = current;
     }
