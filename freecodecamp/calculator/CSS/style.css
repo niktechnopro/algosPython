@@ -1,0 +1,75 @@
+h1{
+  text-align: center;
+}
+
+#wrapper{
+  width: 100hw;
+  min-height: 100vh;
+}
+
+#display{
+  width: 80%;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+}
+
+input{
+  width: 98%;
+  line-height: 3rem;
+  font-size: 2.5rem;
+  text-align: right;
+/*   border: 5px solid green; */
+  box-shadow: 0 0 10px #888888;
+  border-radius: 5px;
+}
+
+#img{
+    background-image:url(https://static.vecteezy.com/system/resources/previews/000/184/641/non_2x/abstract-triangle-grey-background-vector.jpg);
+    background-color: rgba(223,233,343,0.7)
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+}
+
+#calcBody{
+  margin: 0 auto;
+  width: 60%;
+  height: 80%;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+#buttons{
+/*   border: 3px solid green; */
+  width: 80%;
+  margin: auto;
+  position: relative; 
+}
+
+.row{
+  display: block;
+  width:90%;
+  margin: 0 auto;
+/*   border: 1px solid black; */
+  text-align: center;
+  padding: 1rem;
+}
+
+.calcButtons{
+  width: 20%;
+  height: 10%;
+  font-size: 2rem;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: rgba(182,234,222,0.5);
+  outline: none;
+}
+
+
+.calcButtons:active {
+    background-color: rgba(82,34,222,0.5);
+}
+
+#express{
+  text-align: center;
+  font-size: 2rem;
+}
