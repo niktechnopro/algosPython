@@ -1,9 +1,9 @@
 console.log('sanity check');
 //global variables
 var turn = 0;
-var fields = new Array(9).fill(1); //an array to keep track of fields
+var fields = new Array(9).fill(1);; 
 console.log(fields)
-var board = Array.from(Array(9).keys()); //creating array for combinations of X and O
+var board; 
 console.log(board)
 const winCombos = [//this are indexes of squares for winning combinations
 	[0,1,2],
@@ -22,7 +22,10 @@ playField.addEventListener('click', userTurn);
 
 
 var theMessage = function(msg){
-	document.getElementById('messages').textContent=`${msg}`;
+	document.getElementById('messages').textContent=msg;
+	if (fields.length < 1){
+		document.getElementById('messages').addEventListener('click', theGame)
+	}
 	return	
 }
 
@@ -53,7 +56,7 @@ function computerMove(){
 		}
 		}else{
 			console.log(fields)
-			theMessage("	Draw!!! - Good Game")
+			theMessage("Draw!!! - Click on me to play again")
 			return
 	}
 	
@@ -93,6 +96,16 @@ function winningCombination(boad){
 	
 }
 
-var theGame = function(){
+function theGame(e){
 	theMessage("you are starting with 'X'")
-}();
+	document.getElementById('messages').removeEventListener('click', theGame)
+	board = Array.from(Array(9).keys()); //creating array for combinations of X and O
+	fields = new Array(9).fill(1); //an array to keep track of fields
+	board.forEach((element)=>{
+		document.getElementById(element).textContent = '';
+	})
+	var playField = document.querySelector('#structure');
+	playField.addEventListener('click', userTurn);
+};
+
+theGame();

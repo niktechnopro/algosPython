@@ -1,0 +1,235 @@
+/*to keep the background steady*/
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nav-row{
+    margin-top: 0.6rem;
+}
+
+.exit-logo{
+    cursor: pointer;
+}
+
+img {
+    width: 65px;
+    height: 65px;
+}
+
+.page-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url('../images/background.png');
+    background-size: cover;
+}
+
+.guest-menu {
+    padding: 4rem;
+    z-index: 1;
+    height: 48rem;
+    margin: 15% auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.guest-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.middle-guest, .bottom-guest{
+    margin-top: 4rem;
+}
+
+.login_button, .register_button{
+    font-size: 3rem;
+}
+
+.register_button{
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.banner{
+    color: #fff;
+    font-size: 4rem;
+}
+
+#date{
+    margin-top: 0;
+    margin-bottom: -15px;
+    color: white;
+}
+
+.gender{
+    color: #fff;
+    font-size: 24px;
+}
+
+#boyid, #girlid{
+    margin-top: 0.5rem;
+}
+
+.middle{
+    color: white;
+}
+
+.left-logo{
+    height: 45px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgb(16,133,224);
+    height: 80px;
+
+}
+
+/*registration form*/
+.register-form {
+    position: inherit;
+    display: none;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    /*padding: 14px;*/
+    box-sizing: border-box;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+/*following will prevent background change on autofill*/
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: #000 !important; 
+  font-size: 18px !important;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(16,133,224);
+    width: 100%;
+    border: 0;
+    padding: 14px;
+    color: #FFFFFF;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius: 1rem;
+    -webkit-transition: all 0.5 ease;
+    transition: all 0.5 ease;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #4CAF50;
+}
+
+.footer {
+    background-color: lightblue;
+    height: 22px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+
+#form-group {
+    padding: 0px;
+}
+
+.back_to_guest{
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    cursor: pointer;
+}
+/*registration form*/
+
+/*login form*/
+
+.login-form {
+    position: inherit;
+    display: none;
+}
+
+.login{
+    width: 54rem;
+    padding: 3rem;
+}
+
+#btn_login{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.left,
+.right {
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+/*end of login form*/
+
+/* 
+    For Smartphones
+*/
+
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    #inverseProportional{
+        font-size: calc(10px);
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+   .login_button, .register_button {
+        font-size: 4rem;
+    }
+    .middle-guest, .bottom-guest {
+        margin-top: 7rem;
+    }
+
+    .banner{
+        color: #fff;
+        font-size: 6rem;
+    }
+}
+
+
+/*@media screen and (min-width: 200px) {
+    body {
+        font-size: 0.5vw;
+        margin: 0 auto;
+    }
+    .img {
+        width: 5%;
+        height: 5%;
+    }
+}*/
+
+

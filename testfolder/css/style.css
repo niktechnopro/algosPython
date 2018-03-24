@@ -1,0 +1,145 @@
+body {
+    position: relative;
+    padding: 30px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url('../images/background.png');
+    background-size: cover;
+}
+
+#dog-head{
+    display: inline;
+    width: 80px;
+    height: 80px; 
+}
+
+#date{
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+
+.kid-head{
+    width:95px; 
+    height: 95px; 
+    margin-right: 2%;
+}
+
+#inverseProportional{
+    width:30%;
+}
+
+#bot{
+    display: inline; 
+    color: black; 
+    background: #f1eeee; 
+    padding:10px;
+    border-radius: 5px;
+
+}
+
+#responses{
+    margin-top: 5%;
+}
+
+.nav-row{
+    margin-top: 10px;
+}
+
+.page-wrapper {
+    height: 95vh;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgb(16,133,224);
+    height: 80px;
+}
+
+img {
+    width: 65px;
+    height: 65px;
+}
+.img {
+    width: 10%;
+    height: 10%;
+    padding-top: 1%;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-container {
+    position: relative;
+    z-index: 5;
+    height: 600px;
+    width: 80%;
+    margin: 10% auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+
+h1,
+h2,
+h4,
+h5 {
+    text-align: center;
+    color: white;
+}
+p {
+    color: white;
+    font-size: 16px;
+    margin-top: 23px;
+}
+
+#chatBubbles {
+    padding-top: 2px;
+    background-size: 100% 100%;
+    background-color: rgba(215, 215, 215, 0.64);
+}
+#chatBubbles:hover {
+    color: rgba(0, 160, 160, 0.50);
+    font-weight: bold;
+}
+body {
+    font-size: 1.1vw;
+}
+/* 
+    For Smartphones
+*/
+
+@media screen and (min-width: 200px) {
+    body {
+        font-size: 1vw;
+        margin: 0 auto;
+    }
+    .img {
+        width: 5%;
+        height: 5%;
+    }
+}
+
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#speechBubble {
+    background-image: url('../images/speechBubble.png');
+    background-size: 75% 200%;
+    background-position: 88%;
+    background-repeat: no-repeat;
+}
+.coloredBackground {
+    background-image: url('../images/thoughtBubble.png');
+    background-size: 100% 100%;
+    color: black;
+    height: 60px;
+    padding-top:17px;
+}
+
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    #inverseProportional{
+        font-size: calc(10px);
+    }
+}
