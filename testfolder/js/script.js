@@ -1,5 +1,5 @@
 const date = new Date().toDateString();
-		$('#date').text(date); //today's date
+$('#date').text(date); //today's date
 
 // to confirm passwords
 $('[name="relationship"]').on('focus', function () {
