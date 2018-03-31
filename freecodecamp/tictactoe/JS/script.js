@@ -22,26 +22,33 @@ playField.addEventListener('click', userTurn);
 
 
 var theMessage = function(msg){
-	document.getElementById('messages').textContent=msg;
+	let messages = document.getElementsByClassName('messages')[0];
+	messages.textContent=msg;
+	messages.classList.remove('pointer');
 	if (fields.length < 1){
-		document.getElementById('messages').addEventListener('click', theGame)
+		console.log('adding listener')
+		messages.classList.add('pointer');
+		messages.addEventListener('click', theGame)
 	}
 	return	
 }
 
 var playerMove =function(squareid){
+	console.log('player move', fields)
 	fields.pop()
 	var moveX = document.getElementById(squareid).textContent='X';
 	theMessage("O's turn now");
 	console.log(squareid)
 	board[squareid] = moveX;
-	winningCombination(board);
+	let winningX = winningCombination(board);
+	if (winningX){
+		gameOver('X', 'red', winningX)
+	}
 }
 
 function computerMove(){
-	console.log('computer turn');
-	console.log(fields)
-		if (fields.length > 0){
+	console.log('computer turn', fields);
+		if (fields.length > 0 && fields.length < 10){
 			var randomCell = getRandomInt(9);
 			var isEmpty = emptySpaceCheck(randomCell);
 			if (!isEmpty){
@@ -52,10 +59,15 @@ function computerMove(){
 				fields.pop();
 				board[randomCell] = moveO;
 				playField.addEventListener('click', userTurn);
-				winningCombination(board)
-		}
+				let winningO = winningCombination(board);
+				if (winningO){
+					gameOver('O', 'lightgreen', winningO)
+				}
+			}
+		}else if(fields.length == 10){
+			return
 		}else{
-			console.log(fields)
+			console.log(fields, "draw")
 			theMessage("Draw!!! - Click on me to play again")
 			return
 	}
@@ -87,25 +99,74 @@ function emptySpaceCheck(squareid){
 }
 
 function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+	return Math.floor(Math.random() * Math.floor(max));
 }
 
 function winningCombination(boad){
-	//if X or O are placed in any of winCombos
-	
-	
+	console.log(board)
+	// let's find indexes for 'X'
+	for (let combo of winCombos){
+		// console.log('win combos', combo)
+		let countX = 0;
+		let countY = 0;
+		for (let el of combo){
+			if(board[el] == 'X'){
+				countX ++;
+				if (countX == 3){
+					console.log('winning combo for X');
+					return combo;
+				}
+			}
+		}
+		for (let el of combo){
+				if(board[el] == 'O'){
+					countY ++;
+					if (countY == 3){
+						console.log('winning combo for O');
+						return combo;
+					}
+				}
+			}
+
+	}
 }
 
 function theGame(e){
 	theMessage("you are starting with 'X'")
-	document.getElementById('messages').removeEventListener('click', theGame)
+	document.getElementsByClassName('messages')[0].removeEventListener('click', theGame)
 	board = Array.from(Array(9).keys()); //creating array for combinations of X and O
 	fields = new Array(9).fill(1); //an array to keep track of fields
+	// console.log('resetting background');
 	board.forEach((element)=>{
 		document.getElementById(element).textContent = '';
-	})
+		document.getElementById(element).style.background = '';
+		})
 	var playField = document.querySelector('#structure');
 	playField.addEventListener('click', userTurn);
 };
+
+function gameOver(player, color, winning){
+	console.log(player)
+	if (player == 'X'){
+		theMessage("'X' player won!!! Click on me to play again");
+		for (let i of winning){
+			document.getElementById(i).style.background = color;
+		}
+		document.getElementsByClassName('messages')[0].classList.add('pointer');
+		document.getElementsByClassName('messages')[0].addEventListener('click', theGame)
+		fields = new Array(10).fill(1);
+	}else if(player == 'O'){
+		theMessage("'O' player won!!! Click on me to play again");
+		fields = new Array(10).fill(1);
+		for (let i of winning){
+			document.getElementById(i).style.background = color;			
+			}
+		document.querySelector('#structure').removeEventListener('click', userTurn);
+		document.getElementsByClassName('messages')[0].classList.add('pointer');
+		document.getElementsByClassName('messages')[0].addEventListener('click', theGame)	
+	}
+}
+
+
 
 theGame();
