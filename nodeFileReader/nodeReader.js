@@ -35,7 +35,8 @@ function fileIterator(files){ //supposed to return an array of objects
 function makingJSON(data){
 	let recipieObject = {};
 	//we'd have to use regular expressions to slice and dice text to JSON
-	var splitData = data.split('\n');//split on carriage return
+	var splitData = data.split('\r\n');//split on carriage return
+	console.log(splitData)
 	splitData.forEach((element, index)=>{
 		let el = element.split(/:(.+)/);//split on ':'
 		if (el[0] == 'Ingredient'){
