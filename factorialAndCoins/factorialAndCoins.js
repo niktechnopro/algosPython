@@ -36,3 +36,19 @@ let coinConverter = (amount) =>{
 }
 
 console.log(coinConverter(84))
+
+//another version with coins
+function convert_to_coins(amount) {
+  var denominations = [25, 10, 5, 1];
+  var curr_denom_index = 0;
+  while (amount > 0) {
+    while (amount < denominations[curr_denom_index]) {
+      curr_denom_index++;
+    }
+    amount = amount - denominations[curr_denom_index];
+    console.log(denominations[curr_denom_index]);
+  }
+}
+convert_to_coins(87)
+
+
