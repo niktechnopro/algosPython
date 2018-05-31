@@ -7,8 +7,57 @@
 }
 
 #container{
-	width: 50%;
-	height: 30%;
+	width: 33%;
+	height: 10rem;
 	border: 3px solid black;
+	display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-content: stretch;
 }
 
+[name="display"]{
+	height: 48px;
+	background-color: lightgrey;
+	border: 2px solid black;
+	font-size: 20px; 
+	text-align: right;
+}
+
+#btnrow1 div, #btnrow2 div{
+	display: flex;
+	justify-content: center;
+	width: 24%;
+	border: 2px solid grey;
+	font-weight: 800;
+	align-content: center;
+	padding: 0.9rem;
+	font-size: 18px;
+	margin: 0;
+	cursor: pointer;
+}
+
+#btnrow1, #btnrow2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#btn0, #btn1{
+	background-color: lightgreen;
+	color: brown;
+}
+
+#btnClr, #btnEql{
+	background-color: darkgreen;
+	color: white;
+}
+
+#btnSum, #btnSub, #btnMul, #btnDiv{
+	background-color: black;
+	color: red;
+}
+
+#btns{
+	width: 100%;
+}
