@@ -3,6 +3,7 @@
 	background-color: lightblue;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 
 }
 
@@ -12,8 +13,9 @@
 	border: 3px solid black;
 	display: flex;
     flex-direction: column;
-    /* align-items: center; */
     align-content: stretch;
+    justify-content: space-around;
+    border-radius: 3px;
 }
 
 [name="display"]{
@@ -22,6 +24,9 @@
 	border: 2px solid black;
 	font-size: 20px; 
 	text-align: right;
+	padding: 1rem;
+	font-weight: 600;
+	box-sizing: border-box;
 }
 
 #btnrow1 div, #btnrow2 div{
