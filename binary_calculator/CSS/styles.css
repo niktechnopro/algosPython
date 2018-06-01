@@ -40,6 +40,16 @@
 	font-size: 18px;
 	margin: 0;
 	cursor: pointer;
+	transition: 100ms;
+}
+
+
+/*that is what creates button press effect*/
+#btnrow1>div:active, #btnrow2>div:active{
+	box-shadow: 2px 2px #567;
+	transform: scale(0.98);
+	-ms-transform: scale(0.98); /* IE 9 */
+    -webkit-transform: scale(0.98);/* safari 3-8 */
 }
 
 #btnrow1, #btnrow2{
