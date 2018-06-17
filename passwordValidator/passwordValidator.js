@@ -3,6 +3,7 @@ function isPassword(password) {
     let capLetter = false;
     let oneNum = false;
     const arr = password.split('');
+    debugger;
     arr.forEach((char) => {
       if (!isNaN(parseInt(char, 10))) {
         oneNum = true;
