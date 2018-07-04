@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form (freecodecampchallenge)</title>
+	<link rel="stylesheet" type="text/css" href="./styles/style.css" />
+</head>
+<body>
+	<header>
+		<h4>Please be so kind and fill in the form below</h4>
+	</header>
+		<main>
+			<input type="text" name="name" />
+			<input type="email" name="email" />
+			<input type="number" name="age" min="1" max="130" />
+			<label for="role">Which best describes your current role?</label>
+			<select id="role">
+				<option>select one</option>
+				<option>student</option>
+				<option>intern</option>
+				<option>professional</option>
+				<option>homemaker</option>
+			</select>
+			<fieldset>
+				<legend>Would you recommed us to your friend?</legend>
+				<input type="radio" name="recommendation" checked/>Yes
+				<input type="radio" name="recommendation" />No
+				<input type="radio" name="recommendation" />Maybe
+			</fieldset>
+		</main>
+	<footer>
+		
+	</footer>
+	<script defer type="text/javascript" src="./scripts/script.js"></script>
+</body>
+</html>
