@@ -6,31 +6,55 @@
 	<link rel="stylesheet" type="text/css" href="./styles/style.css" />
 </head>
 <body>
+	<div id="wrapper">
 	<header>
 		<h4>Please be so kind and fill in the form below</h4>
 	</header>
 		<main>
-			<input type="text" name="name" />
-			<input type="email" name="email" />
-			<input type="number" name="age" min="1" max="130" />
-			<label for="role">Which best describes your current role?</label>
-			<select id="role">
-				<option>select one</option>
-				<option>student</option>
-				<option>intern</option>
-				<option>professional</option>
-				<option>homemaker</option>
-			</select>
-			<fieldset>
-				<legend>Would you recommed us to your friend?</legend>
-				<input type="radio" name="recommendation" checked/>Yes
-				<input type="radio" name="recommendation" />No
-				<input type="radio" name="recommendation" />Maybe
-			</fieldset>
+			<form>
+				<label for="name">Enter Your Name Please<input type="text" id="name" name="name"/></label>
+				<label for="email">Your email goes here<input type="email" id="email" name="email" /></label>
+				<label for="age">Enter Your Age Please<input type="number" id="age" name="age" min="1" max="130" /></label>
+				<label for="role">Which best describes your current role?</label>
+				<select id="role">
+					<option>select one</option>
+					<option>student</option>
+					<option>intern</option>
+					<option>professional</option>
+					<option>homemaker</option>
+					<option>other</option>
+				</select>
+				<label for=like>What do you like about us?</label>
+				<select id="like">
+					<option>select one</option>
+					<option>Projects</option>
+					<option>Community</option>
+					<option>Something else</option>
+				</select>
+				<label for="for_something_else">If you selected "Something else"</label>
+				<textarea id="for_something_else" type="text" wrap="hard" cols='40' rows="4">briefly describe your response</textarea>
+				<fieldset>
+					<legend>Would you recommed us to your friend?</legend>
+					<input type="radio" name="recommendation" checked/>Yes
+					<input type="radio" name="recommendation" />No
+					<input type="radio" name="recommendation" />Maybe
+				</fieldset>
+				<fieldset>
+					<legend>Things for us to improve on, select all that apply</legend>
+					<input type="checkbox" name="improvement"/>more content
+					<input type="checkbox" name="improvement"/>more faster response
+					<input type="checkbox" name="improvement"/>videos
+					<input type="checkbox" name="improvement"/>forum
+					<input type="checkbox" name="improvement"/>challenges
+				</fieldset>
+				<label for="suggestions">Any comments or suggestions</label>
+				<textarea id="suggestions">your comments or suggestions</textarea>
+			</form>
 		</main>
 	<footer>
-		
+		<h6>This is Survey coding challenge from FreeCodeCamp Curriculum</h6>
 	</footer>
+	</div>
 	<script defer type="text/javascript" src="./scripts/script.js"></script>
 </body>
 </html>

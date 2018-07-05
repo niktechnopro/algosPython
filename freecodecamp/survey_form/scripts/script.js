@@ -1,1 +1,0 @@
-alert('sanity check')
