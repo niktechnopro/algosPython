@@ -10,7 +10,7 @@
 	<header>
 		<h4>Please be so kind and fill in the form below</h4>
 	</header>
-		<main>
+		<main id="content">
 			<form>
 				<label for="name">Enter Your Name Please<input type="text" id="name" name="name"/></label>
 				<label for="email">Your email goes here<input type="email" id="email" name="email" /></label>
@@ -35,9 +35,9 @@
 				<textarea id="for_something_else" type="text" wrap="hard" cols='40' rows="4">briefly describe your response</textarea>
 				<fieldset>
 					<legend>Would you recommed us to your friend?</legend>
-					<input type="radio" name="recommendation" checked/>Yes
-					<input type="radio" name="recommendation" />No
-					<input type="radio" name="recommendation" />Maybe
+					<label for="radio1"><input type="radio" name="recommendation" id="radio1" checked>Yes</label>
+					<label for="radio2"><input type="radio" name="recommendation" id="radio2">No</label>
+					<label for="radio3"><input type="radio" name="recommendation" id="radio3">Maybe</label>
 				</fieldset>
 				<fieldset>
 					<legend>Things for us to improve on, select all that apply</legend>
@@ -51,9 +51,9 @@
 				<textarea id="suggestions">your comments or suggestions</textarea>
 			</form>
 		</main>
-	<footer>
-		<h6>This is Survey coding challenge from FreeCodeCamp Curriculum</h6>
-	</footer>
+		<footer>
+			<h6>This is Survey coding challenge from FreeCodeCamp Curriculum</h6>
+		</footer>
 	</div>
 	<script defer type="text/javascript" src="./scripts/script.js"></script>
 </body>

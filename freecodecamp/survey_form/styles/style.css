@@ -8,8 +8,31 @@ input, select, textarea{
 }
 
 #wrapper{
-	width: 90%;
+	min-height: 100vh;
 	border: 2px solid black;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: lightblue;
+}
+
+#content{
+	display: flex;
+	flex: 1;
 	justify-content: center;
 }
+
+label [type="radio"]{
+	display: inline-block;
+}
+
+label{
+	padding: 0 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
