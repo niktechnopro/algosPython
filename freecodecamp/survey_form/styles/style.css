@@ -1,11 +1,34 @@
 body{
 	display: flex;
 	justify-content: center;
+	background-color: lightblue;
 }
 
-input, select, textarea{
+input{
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+ #role, #like{
+ 	font-size: 1rem;
+ }
+
+[for="name"],[for="email"],[for="age"]{
 	display: block;
 }
+
+[id="name-block"],[id="email-block"],[id="age-block"],#role-block,#about-us{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0.5rem 0;
+}
+
+#name, #email, #age{
+	width:15rem;
+}
+
 
 #wrapper{
 	min-height: 100vh;
@@ -13,7 +36,8 @@ input, select, textarea{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: lightblue;
+	border-radius: 5px;
+	background-color: white;
 }
 
 #content{
@@ -22,12 +46,9 @@ input, select, textarea{
 	justify-content: center;
 }
 
-label [type="radio"]{
-	display: inline-block;
-}
 
 label{
-	padding: 0 3rem;
+	padding: 0 1rem;
 }
 
 textarea {resize: none} /*to remove resizable text area*/
@@ -52,17 +73,28 @@ p{
 }
 
 textarea{
-	width: 100%;
+	width: 98%;
 	height: 3rem;
 	font-size: 1rem;
 	border-radius: 5px;
 }
 
 p{
-	margin: 0;
+	margin: 0.5rem;
 }
 
-button [type="submit"]{
+
+button[type="submit"]{
+	padding: 1rem;
+    margin: 0.5rem 0 0 0;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: lightgreen;
+    width: 10rem;
+    font-size: 1rem;
+}
+
+#button{
 	text-align: center;
 }
 
@@ -76,5 +108,8 @@ fieldset{
     #wrapper {
         width: 80%;
     }
+    label{
+		padding: 0 3rem;
+	}
 }
 

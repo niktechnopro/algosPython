@@ -13,46 +13,53 @@
 		<main id="content">
 			<div>
 			<form>
-				<label for="name">Enter Your Name Please<input type="text" id="name" name="name" required/></label>
-				<label for="email">Your email goes here<input type="email" id="email" name="email" required/></label>
-				<label for="age">Enter Your Age Please<input type="number" id="age" name="age" min="1" max="130" required/></label>
-				<label for="role">Which best describes your current role?</label>
-				<select id="role" required>
-					<option>select one</option>
-					<option>student</option>
-					<option>intern</option>
-					<option>professional</option>
-					<option>homemaker</option>
-					<option>other</option>
-				</select>
-				<label for=like>What do you like about us?</label>
-				<select id="like" required>
-					<option>select one</option>
-					<option>Projects</option>
-					<option>Community</option>
-					<option>Something else</option>
-				</select>
-				<label for="for_something_else">If you selected "Something else"</label>
+				<fieldset>
+					<legend>Information about You</legend>
+					<div id="name-block"><label for="name">Your Name: </label><input type="text" id="name" name="name" placeholder="Enter your name please" required autofocus /></div>
+					<div id="email-block"><label for="email">Your email: </label><span> </span><input type="email" id="email" name="email" placeholder="your email" required/></div>
+					<div id="age-block"><label for="age">Your Age: </label><input type="number" id="age" name="age" min="1" max="130" placeholder="age" required/></div>
+					<div id="role-block">
+					<label for="role">Your current role?</label>
+					<select id="role" required>
+						<option>select one</option>
+						<option value="student">student</option>
+						<option value="professional">professional</option>
+						<option value="homemaker">homemaker</option>
+						<option value="other">other</option>
+					</select>
+					</div>
+					<div id="about-us">
+					<label for=like>What do you like about us?</label>
+					<select id="like" required>
+						<option>select one</option>
+						<option value="projects">Projects</option>
+						<option value="community">Community</option>
+						<option value="something-else">Something else</option>
+					</select>
+					</div>
+				</fieldset>
+				
+				<p><label for="for_something_else">If you selected "Something else"</label></p>
 				<textarea id="for_something_else" type="text" placeholder="briefly describe your response" wrap="hard" cols='40' rows="4"></textarea>
 				<br/>
 				<fieldset>
 					<legend>Would you recommed us to your friend?</legend>
-					<label for="radio1"><input type="radio" name="recommendation" id="radio1" checked>Yes</label>
-					<label for="radio2"><input type="radio" name="recommendation" id="radio2">No</label>
-					<label for="radio3"><input type="radio" name="recommendation" id="radio3">Maybe</label>
+					<label for="radio1"><input type="radio" name="recommendation" id="radio1" checked value="yes">Yes</label>
+					<label for="radio2"><input type="radio" name="recommendation" id="radio2" value="no">Maybe</label>
+					<label for="radio3"><input type="radio" name="recommendation" id="radio3" value="maybe">Not sure</label>
 				</fieldset>
 				<br/>
 				<fieldset>
 					<legend>Things for us to improve on, select all that apply</legend>
-					<label for="checkbox1"><input type="checkbox" name="improvement" id="checkbox1"/>more content</label>
-					<label for="checkbox2"><input type="checkbox" name="improvement" id="checkbox2"/>faster response</label>
-					<label for="checkbox3"><input type="checkbox" name="improvement" id="checkbox3"/>videos</label>
-					<label for="checkbox4"><input type="checkbox" name="improvement" id="checkbox4"/>forum</label>
-					<label for="checkbox5"><input type="checkbox" name="improvement" id="checkbox5"/>more challenges</label>
+					<div><label for="checkbox1"><input type="checkbox" name="improvement" id="checkbox1" value="more content"/>more content</label></div>
+					<div><label for="checkbox2"><input type="checkbox" name="improvement" id="checkbox2" value="faster response"/>faster response</label></div>
+					<div><label for="checkbox3"><input type="checkbox" name="improvement" id="checkbox3" value="videos"/>videos</label></div>
+					<div><label for="checkbox4"><input type="checkbox" name="improvement" id="checkbox4" value="forum"/>forum</label></div>
+					<div><label for="checkbox5"><input type="checkbox" name="improvement" id="checkbox5" value="more challenges"/>more challenges</label></div>
 				</fieldset>
 				<p><label for="suggestions">Any comments or suggestions</label></p>
 				<textarea id="suggestions" placeholder="your comments or suggestions"></textarea>
-				<button type="submit">Submit Survey</button>
+				<div id="button"><button type="submit">Submit Survey</button></div>
 			</form>
 			</div>
 		</main>
