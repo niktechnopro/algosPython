@@ -4,13 +4,21 @@ body{
 	background-color: lightblue;
 }
 
+#title{
+	text-align: center;
+}
+
+#description{
+	font-size: 1rem;
+}
+
 input{
 	display: inline-block;
 	border-radius: 5px;
 	font-size: 1rem;
 }
 
- #role, #like{
+ #dropdown, #like{
  	font-size: 1rem;
  }
 
@@ -25,19 +33,20 @@ input{
 	margin: 0.5rem 0;
 }
 
-#name, #email, #age{
-	width:15rem;
+#name, #email, #number{
+	width:12rem;
 }
 
 
 #wrapper{
+	width: 100%;
 	min-height: 100vh;
 	border: 2px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 5px;
-	background-color: white;
+	background-color: #eaeef0;
 }
 
 #content{
@@ -110,6 +119,12 @@ fieldset{
     }
     label{
 		padding: 0 3rem;
+	}
+	#name, #email, #number{
+		width:15rem;
+	}
+	#description{
+		font-size: 1.5rem;
 	}
 }
 

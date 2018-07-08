@@ -8,20 +8,21 @@
 <body>
 	<div id="wrapper">
 	<header>
-		<h2>Please be so kind and fill in the form below</h2>
+		<h1 id="title">Survey Form</h1>
+		<h2 id="description">Please be so kind and fill in the form below</h2>
 	</header>
 		<main id="content">
 			<div>
-			<form>
+			<form action="#" id="survey form" method="post">
 				<fieldset>
 					<legend>Information about You</legend>
-					<div id="name-block"><label for="name">Your Name: </label><input type="text" id="name" name="name" placeholder="Enter your name please" required autofocus /></div>
-					<div id="email-block"><label for="email">Your email: </label><span> </span><input type="email" id="email" name="email" placeholder="your email" required/></div>
-					<div id="age-block"><label for="age">Your Age: </label><input type="number" id="age" name="age" min="1" max="130" placeholder="age" required/></div>
+					<div id="name-block"><label id="name-label" for="name">Your Name: </label><input type="text" id="name" name="name" placeholder="Enter your name" required autofocus /></div>
+					<div id="email-block"><label id="email-label" for="email">Your email: </label><span> </span><input type="email" id="email" name="email" placeholder="Enter your email" required/></div>
+					<div id="age-block"><label id="number-label" for="number">Your Age: </label><input type="number" id="number" name="age" min="1" max="125" placeholder="Enter your age" required/></div>
 					<div id="role-block">
 					<label for="role">Your current role?</label>
-					<select id="role" required>
-						<option>select one</option>
+					<select id="dropdown" required>
+						<option value>select one</option>
 						<option value="student">student</option>
 						<option value="professional">professional</option>
 						<option value="homemaker">homemaker</option>
@@ -31,7 +32,7 @@
 					<div id="about-us">
 					<label for=like>What do you like about us?</label>
 					<select id="like" required>
-						<option>select one</option>
+						<option value>select one</option>
 						<option value="projects">Projects</option>
 						<option value="community">Community</option>
 						<option value="something-else">Something else</option>
@@ -59,7 +60,7 @@
 				</fieldset>
 				<p><label for="suggestions">Any comments or suggestions</label></p>
 				<textarea id="suggestions" placeholder="your comments or suggestions"></textarea>
-				<div id="button"><button type="submit">Submit Survey</button></div>
+				<div id="button"><button type="submit" id="submit">Submit Survey</button></div>
 			</form>
 			</div>
 		</main>
