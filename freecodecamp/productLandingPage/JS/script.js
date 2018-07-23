@@ -8,7 +8,7 @@ function imageFile(){
 	fileProcessor(file).then((result) => {
 		console.log(result)
 		return canvasWorks(result)
-	})
+	}).catch(err => console.log(err));
 }
 
 
@@ -17,15 +17,13 @@ function fileProcessor(file){
 	let reader = new FileReader();
 	if (reader){
 		return new Promise((resolve, reject)=> {	
-			reader.onload = function(event) {
+			reader.onload = (event) => {
 			    // The file's text will be printed here
 			    // console.log(event.target.result)
 			    preview.src = reader.result;
+			    resolve(reader.result)
 		  	};
-		  	reader.onloadend = function(event){
-		  		resolve(reader.result)
-		  	}
-		  	reader.onerror = function(event){
+		  	reader.onerror = (event) => {
 		  		preview.src = "";
 		  		alert('there was a problem with the image')
 		  		reject(reader.error)
@@ -44,9 +42,7 @@ function canvasWorks(img){
 	let imageCopy = new Image();//creates new <img> element
 	document.body.appendChild(imageCopy);
 	imageCopy.setAttribute('style', 'display: none');
-	imageCopy.setAttribute('alt','script div');
     imageCopy.setAttribute("src", img);
-    imageCopy.setAttribute('id', 'copy')
 
     //let's set the Canvas next
     if (imageCopy){
@@ -64,10 +60,10 @@ function canvasWorks(img){
 
     // Read information from Canvas
     	imgInfo = imgCanvas.toDataURL('image/png');
-    	console.log(imgInfo)
-    	// console.log(imgInfo);
     	preview.src = imgInfo;
     	document.body.removeChild(imageCopy);
+    	console.log('resized image',imgInfo);
+    	return imgInfo;
     }
 }
 
