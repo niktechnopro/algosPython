@@ -7,6 +7,23 @@
 	<script defer src="./JS/script.js"></script>
 </head>
 <body>
-	
+	<div id="wrapper">
+		<header>
+			<h1>This is a test of an Image uploader</h1>
+		</header>
+		<main>
+			<label for="file_uploader">Upload Image File Here</label>
+			<input type="file" id="file_uploader" name="file" accept=".png, .jpg, .jpeg" multiple="false" />
+			<!-- accept="image/gif, image/jpeg, image/png" - can specify this way as well -->
+			<!-- accept="image/*" - will accept any type -->
+			<input type="submit" name="submit" />
+			<div id="image_container">
+				<img src="" id="image_tag" alt="Image preview...">
+			</div>
+		</main>
+		<footer>
+			
+		</footer>
+	</div>
 </body>
 </html>
