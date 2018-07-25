@@ -13,25 +13,30 @@ function imageFile(){
 
 
 function fileProcessor(file){
-	console.log('we are processing the file');
-	let reader = new FileReader();
-	if (reader){
-		return new Promise((resolve, reject)=> {	
-			reader.onload = (event) => {
-			    // The file's text will be printed here
-			    // console.log(event.target.result)
-			    preview.src = reader.result;
-			    resolve(reader.result)
-		  	};
-		  	reader.onerror = (event) => {
-		  		preview.src = "";
-		  		alert('there was a problem with the image')
-		  		reject(reader.error)
-		  	}
-		  	reader.readAsDataURL(file);
-		})
+	console.log('we are processing the file', file);
+	if(file){
+		let reader = new FileReader();
+		if (reader){
+			return new Promise((resolve, reject)=> {	
+				reader.onload = (event) => {
+				    // The file's text will be printed here
+				    // console.log(event.target.result)
+				    preview.src = reader.result;
+				    resolve(reader.result)
+			  	};
+			  	reader.onerror = (event) => {
+			  		preview.src = "";
+			  		alert('there was a problem with the image')
+			  		reject(reader.error)
+			  	}
+			  	reader.readAsDataURL(file);
+			})
+		}else{
+			alert('Your browser does not support our image uploader')
+		}
 	}else{
-		alert('Your browser does not support our image uploader')
+		alert('please choose the file to upload')
+		return;
 	}
 	
 }
