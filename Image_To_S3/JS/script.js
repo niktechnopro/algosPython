@@ -1,19 +1,29 @@
 //now we are going to test our image uploader before creating component in react
-const URL = 'http://';
+const URL = 'http://127.0.0.1:3000';
 let submit = document.querySelector('[name="submit"]');
 let preview = document.querySelector('#image_tag');
 submit.addEventListener('click', imageFile);
 
 function imageFile(){
 	file = document.getElementById("file_uploader").files[0];
+	console.log(file)
 	fileProcessor(file).then((result) => {
-		sendToServer(canvasWorks(result));
-		let fileToSend = new FormData();
-		fileToSend.append('name', file.name);
-		fileToSend.append('type', file.type);
-		fileToSend.append('encoded_image', result)
-		return sendToServer(fileToSend);
-	}).catch(err => console.log(err));
+		let resized = canvasWorks(result);
+		// let fileToSend = new FormData();
+		// fileToSend.append('name', file.name);
+		// fileToSend.append('type', file.type);
+		// fileToSend.append('encoded_image', result);
+		// let data = dataUpload(fileToSend);
+
+		let formdata = {//image to send
+			'name' : file.name,
+			'type' : file.type,
+			'encoded_image' : result
+		}
+		
+		let sendPromise = dataUpload(formdata);
+		sendPromise.then((result) => console.log(result)).catch(error=>console.log(error))
+	})
 }
 
 
@@ -63,7 +73,7 @@ function canvasWorks(img){
 	    imgCanvas.width = imageCopy.width*ratio;
 	    imgCanvas.height = imageCopy.height*ratio;
 
-	    console.log(imgCanvas.width, imgCanvas.height, ratio)
+	    // console.log(imgCanvas.width, imgCanvas.height, ratio)
     // Draw image into canvas element
     	imgContext.drawImage(imageCopy, 0, 0, imgCanvas.width, imgCanvas.height);
 
@@ -76,15 +86,23 @@ function canvasWorks(img){
     }
 }
 
-function sendToServer(formdata){
-	console.log('this will be send to server');
-	fetch(URL,{
-		method: 'POST',
-		headers: new Headers{'Content-Type': 'application/json'},
-		body: formdata
-		})
-	.then((res)=>res.json())
-	.catch((error)=>console.lot('error occured', error))
-	.then((result)=>console.log('data successfully sent',result))
+function dataUpload(formdata){
+	return $.post(URL, formdata)
+
+
+	// let's shelve fetch for now.
+	// fetch(URL,{
+	// 	method: 'POST',
+	// 	headers:{
+ //    		'Content-Type': 'application/json'
+ //  		},
+	// 	body: formdata
+	// })
+	// .then((response)=>response.json())
+	// .catch((error)=>console.log('error occured', error))
+	// .then((result)=>console.log('data successfully sent',result))
+	// .catch(err => console.log(err));
 }
+
+
 

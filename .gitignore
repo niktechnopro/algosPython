@@ -1,0 +1,4 @@
+Image_To_S3/server/.env
+Image_To_S3/server/.gitignore
+Image_To_S3/server/node_modules
+Image_To_S3/server/config
