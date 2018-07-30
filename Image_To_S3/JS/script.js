@@ -9,10 +9,8 @@ function imageFile(){
 	console.log(file)
 	fileProcessor(file).then((result) => {
 		let resized = canvasWorks(result);
-		// let fileToSend = new FormData();
-		// fileToSend.append('name', file.name);
-		// fileToSend.append('type', file.type);
-		// fileToSend.append('encoded_image', result);
+		let fileToSend = new FormData();
+		fileToSend.append('file', file)
 		// let data = dataUpload(fileToSend);
 
 		let formdata = {//image to send
@@ -87,6 +85,7 @@ function canvasWorks(img){
 }
 
 function dataUpload(formdata){
+	// console.log(formdata.get('file'));//now I can see what's inside when using FormData object
 	return $.post(URL, formdata)
 
 
