@@ -1,0 +1,8 @@
+label{
+	display: block;
+}
+
+#autocomplete{
+	line-height: 1.5rem;
+	font-size: 1.4rem;
+}
