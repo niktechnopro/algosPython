@@ -4,7 +4,7 @@ var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla"
 let inpfield = document.querySelector('#autocomplete');//targeting input field
 let wrapper = document.querySelector('#autocomplete_wrapper');//wrapper around input
 let appender = document.querySelector('.autocomplete-items');//wrapper around input
-let currentFocus=-1;
+let currentFocus;
 //setting up our listener
 // inpfield.addEventListener("focus", handleFocus);
 inpfield.addEventListener('input', handleKeyDown);
@@ -27,6 +27,7 @@ function handleKeyDown(e){
 
 function countrySelection(value){
 	console.log('before iterator', value)
+	currentFocus = -1;
 	for (let i=0; i<countries.length; i++){
 		// with substrings we'll be able to match what we are typing
 		if (countries[i].substr(0, value.length).toUpperCase()===value.toUpperCase()){
@@ -62,7 +63,6 @@ function closeAllLists(){
 inpfield.addEventListener("keydown", function(e) {
 	//let's get an array of all elements
 	let items = document.querySelectorAll('.autocomplete-item');
-	// console.log(items)
 	let button = e.keyCode;
 	if (button === 40){
 		currentFocus++;
@@ -81,7 +81,7 @@ inpfield.addEventListener("keydown", function(e) {
 	if (currentFocus < 0){
 		currentFocus = items.length-1;
 	}
-	if (items.length){
+	if (items.length && currentFocus > -1){
 		items[currentFocus].classList.add("autocomplete-active");
 		for (var i = 0; i < items.length; i++) {
 			if(items[i]!==items[currentFocus]){
@@ -89,7 +89,9 @@ inpfield.addEventListener("keydown", function(e) {
       		}
     	}
 	}
-	console.log(currentFocus)
+	// console.log(items)
+	// console.log(button)
+	// console.log(currentFocus)
   });
 
 
