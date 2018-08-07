@@ -4,18 +4,15 @@ var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla"
 let inpfield = document.querySelector('#autocomplete');//targeting input field
 let wrapper = document.querySelector('#autocomplete_wrapper');//wrapper around input
 let appender = document.querySelector('.autocomplete-items');//wrapper around input
-
+let currentFocus=-1;
 //setting up our listener
 // inpfield.addEventListener("focus", handleFocus);
 inpfield.addEventListener('input', handleKeyDown);
 wrapper.addEventListener('click', populateInput);
 
-function handleFocus(e){
-	// console.log('focused on input', e);
-	//once focused let's close everything
-}
 
 function handleKeyDown(e){
+
 	//'this' in here represent input DOM element 
 	// reading from the input field
 	let value = e.target.value;
@@ -59,6 +56,41 @@ function closeAllLists(){
         appender.removeChild(items[i]);
     }
 }
+
+
+//the following to use buttons to navigate up and down and Enter
+inpfield.addEventListener("keydown", function(e) {
+	//let's get an array of all elements
+	let items = document.querySelectorAll('.autocomplete-item');
+	// console.log(items)
+	let button = e.keyCode;
+	if (button === 40){
+		currentFocus++;
+	}else if(button === 38){
+		currentFocus--;
+	}else if(button === 13){
+		console.log('pressed Enter button')
+		e.preventDefault();
+		// console.log(items[currentFocus].getAttribute('value'));
+		items[currentFocus].click();
+		return
+	}
+	if (currentFocus > items.length-1){
+		currentFocus = 0;
+	}
+	if (currentFocus < 0){
+		currentFocus = items.length-1;
+	}
+	if (items.length){
+		items[currentFocus].classList.add("autocomplete-active");
+		for (var i = 0; i < items.length; i++) {
+			if(items[i]!==items[currentFocus]){
+      			items[i].classList.remove("autocomplete-active");
+      		}
+    	}
+	}
+	console.log(currentFocus)
+  });
 
 
 
