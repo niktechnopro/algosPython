@@ -1,3 +1,9 @@
 body{
-	background: blue;
+	/*background: blue;*/
+	background: url('../assets/bg.jpg');
+	background-attachment: fixed;
+}
+
+#footer{
+	text-align: center;
 }
