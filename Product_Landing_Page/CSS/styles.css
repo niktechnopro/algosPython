@@ -2,8 +2,62 @@ body{
 	/*background: blue;*/
 	background: url('../assets/bg.jpg');
 	background-attachment: fixed;
+	margin: 0;
 }
+
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(189, 203, 167, 0.6);
+}
+
+#header h1{
+	display: flex;
+	align-items: center;
+}
+
+#header-img{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#header-img img{
+	border-radius: 1rem;
+	min-width: 30%;
+	max-width: 50%;
+	height: auto;
+}
+
+#frame{
+	width: 50%;
+	height: 300px;
+	padding: 18px 18px 2px 18px;
+}
+
+.slider{
+	margin-top:1rem;
+	width: 100%;
+}
+
+#slider-image{
+	max-width: 100%;
+}
+
+[for="slider"]{
+	display: block;
+	text-align: center;
+}
+
 
 #footer{
 	text-align: center;
 }
+
+@media screen and (min-width: 648px) {
+    #font-size{
+    	font-size: 2rem;
+    }
+}
+

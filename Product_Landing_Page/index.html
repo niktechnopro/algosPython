@@ -4,23 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Product Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="./CSS/styles.css" />
-	<script src="./JS/script.js"></script>
 </head>
 <body>
 
 	<header id="header">
-		//this is going to be some sort of navigation bar
-		<div id="header-img">header image goes here</div>
+		<p id='font-size'>RC Planes Tips and Tricks</p>
+		<div id="header-img"><img src="./assets/corsair.jpg" alt="picture of RC plane"/></div>
 	</header>
 
 	<main>
-		<<section id="upper">
+		<section id="upper">
 			
 		</section>
 		<section id="middle">
-			
+			<div id='frame'>
+				<img id="slider-image" src="./assets/plane.jpg" alt="some plane"/>
+				<label for="slider">Move the slider to adjust the size of the image</label>
+				<input type="range" min='1' max='100' value='50' class='slider' id="slider" oninput="moving(this.value)" />
+			</div>
 		</section>
-		<<section id="lower">
+		<section id="lower">
 			
 		</section>
 	</main>
@@ -28,6 +31,6 @@
 	<footer>
 		<p id="footer">&copy Product Page developped for FreeCodeCamp challenge</p>
 	</footer>
-
+	<script src="./JS/script.js"></script>
 </body>
 </html>
