@@ -18,9 +18,13 @@
 		</section>
 		<section id="middle">
 			<div id='frame'>
-				<img id="slider-image" src="./assets/plane.jpg" alt="some plane"/>
-				<label for="slider">Move the slider to adjust the size of the image</label>
-				<input type="range" min='1' max='100' value='50' class='slider' id="slider" oninput="moving(this.value)" />
+				<div id="image_wrapper">
+					<img id="slider-image" src="./assets/plane.jpg" alt="some image"/>
+				</div>
+				<div id="slider_wrapper">
+					<label for="slider">Move the slider to adjust the size of the image</label>
+					<input type="range" min='1' max='100' value='100' class='slider' id="slider" oninput="moving(this.value)" />
+				</div>
 			</div>
 		</section>
 		<section id="lower">
