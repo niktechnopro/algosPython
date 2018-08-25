@@ -35,14 +35,15 @@ body{
     flex-direction: column;
     width: 50%;
     padding: 18px;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 
 #image_wrapper{
 	display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    /*width: 100%;
+    height: auto;*/
 }
 
 #slider_wrapper{
@@ -55,6 +56,7 @@ body{
 }
 
 #slider-image{
+	display: inline-block;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -67,6 +69,20 @@ body{
 
 #footer{
 	text-align: center;
+}
+
+#font-size{
+		margin-left: 18px;
+    }
+
+#test{
+	display: block;
+}
+
+#middle_wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 @media screen and (min-width: 648px) {
