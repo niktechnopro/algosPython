@@ -9,3 +9,66 @@ body{
 	display: flex;
 	justify-content: center;
 }
+
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#logo{
+	display: block;
+	max-height: 36px;
+	margin-left: 1rem;
+}
+
+#header p{
+	display: none;
+}
+
+#header_elements{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+}
+
+.checked {
+    color: orange;
+}
+
+#header_elements li{
+	padding: 0.7rem;
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 760px){
+	#header_elements li{
+		font-size: 1.5rem;
+		color: #2626d8;
+	}
+
+	#header_elements{
+		margin-left: -18rem;
+	}
+
+}
+
+@media only screen and (min-width: 955px){
+	#header p{
+			display: block;
+			font-weight: 800;
+			font-size: 2rem;
+			margin: 0;
+		}
+}
+
+@media only screen and (max-width: 1145px){
+	.checked {
+    	display: none;
+	}
+}
