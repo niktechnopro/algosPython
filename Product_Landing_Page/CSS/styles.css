@@ -99,6 +99,10 @@ ul.desc{
 	margin-left: -1rem;
 }
 
+.optional{
+	display: none;
+}
+
 @media only screen and (min-width: 760px){
 	#header{
 		display: grid;
@@ -126,11 +130,14 @@ ul.desc{
 }
 
 @media only screen and (min-width: 1000px){
-
 	#header p{
 		display: block;
 		font-weight: 800;
 		font-size: 2rem;
+	}
+
+	.optional{
+		display: inline;
 	}
 }
 
