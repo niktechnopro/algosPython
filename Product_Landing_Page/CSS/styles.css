@@ -6,8 +6,7 @@ body{
 }
 
 #footer{
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
 
 #header{
@@ -127,6 +126,57 @@ ul.desc{
 		border: 0;
 	}
 
+	.optional{
+		display: inline;
+	}
+
+}
+
+.rating_price{
+	display: flex;
+    justify-content: space-between;
+}
+
+.rating{
+	position: relative;
+    display: inline-block;
+    width: 111px;
+    height: 21px;
+    background-image: url(../assets/sprite.png);
+    background-position: right -105px;
+    background-repeat: no-repeat;
+}
+
+.price{
+	font-size: 1.5rem;
+}
+
+.card{
+	max-width: 374px;
+	box-sizing: border-box;
+}
+
+.card img{
+	max-width: 100%;
+}
+
+.card{
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+#bottom{
+	display: flex;
+	justify-content: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.product_sku{
+	float: right;
 }
 
 @media only screen and (min-width: 1000px){
@@ -134,10 +184,6 @@ ul.desc{
 		display: block;
 		font-weight: 800;
 		font-size: 2rem;
-	}
-
-	.optional{
-		display: inline;
 	}
 }
 
