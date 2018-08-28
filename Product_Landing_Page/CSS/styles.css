@@ -102,6 +102,7 @@ ul.desc{
 	display: none;
 }
 
+
 @media only screen and (min-width: 760px){
 	#header{
 		display: grid;
@@ -153,18 +154,22 @@ ul.desc{
 
 .card{
 	max-width: 374px;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
 	box-sizing: border-box;
+	-webkit-transition: transform 2s;
+	transition: transform 1s;
 }
 
 .card img{
 	max-width: 100%;
 }
 
-.card{
-	padding: 20px;
-	background: white;
-	border-radius: 10px;
-}
+.card:hover{ 
+	position: relative; 
+    transform: rotate(15deg);
+ } 
 
 #bottom{
 	display: flex;
