@@ -81,7 +81,7 @@ article{
 .title{
 	/*margin-top: 0;*/
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -204,8 +204,8 @@ div.stars{
 	margin-top: 0;
 }
 
-#upper .desc{
-	text-align: center;
+#upper .desc {
+    text-align: justify;
 }
 
 
@@ -244,6 +244,10 @@ div.stars{
 
 	.pr{
 		justify-content: space-between;
+	}
+
+	#upper .desc{
+		text-align: center;
 	}
 
 }
