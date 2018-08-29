@@ -102,6 +102,101 @@ ul.desc{
 	display: none;
 }
 
+.rating_price{
+	display: flex;
+    justify-content: space-between;
+}
+
+.pr{
+	font-size: 1.5rem;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.price{
+	font-size: 1.5rem;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+	max-width: 374px;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+	box-sizing: border-box;
+	-webkit-transition: transform 2s;
+	transition: transform 1s;
+}
+
+.card img{
+	max-width: 100%;
+}
+
+.card:hover{ 
+	position: relative; 
+    transform: scale(1.05);
+ } 
+
+#bottom{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+a{
+	text-decoration: none;
+}
+
+.product_sku{
+	float: right;
+}
+
+div.stars{
+	min-width:270px;
+	display: inline-block;
+}
+
+.input{
+	display: none;
+}
+
+.input:checked ~ .label:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+
+.label.star{
+	float: right;
+	padding: 3px;
+	font-size: 27px;
+	color: #444;
+	transition: all 0.2s;
+}
+
+.input.star-5:checked ~ .label:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+.input.star-1:checked ~ .label.star:before { color: #F62; }
+
+.label:hover { transform: rotate(-15deg) scale(1.3); }
+
+.label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+#video{
+	width: 350px;
+	height: 215px;
+}
+
 
 @media only screen and (min-width: 760px){
 	#header{
@@ -131,58 +226,16 @@ ul.desc{
 		display: inline;
 	}
 
+	#video{
+		width: 560px;
+		height: 315px;
+	}
+
+	.pr{
+		justify-content: space-between;
+	}
 }
 
-.rating_price{
-	display: flex;
-    justify-content: space-between;
-}
-
-.rating{
-	position: relative;
-    display: inline-block;
-    width: 111px;
-    height: 21px;
-    background-image: url(../assets/sprite.png);
-    background-position: right -105px;
-    background-repeat: no-repeat;
-}
-
-.price{
-	font-size: 1.5rem;
-}
-
-.card{
-	max-width: 374px;
-	padding: 20px;
-	background: white;
-	border-radius: 10px;
-	box-sizing: border-box;
-	-webkit-transition: transform 2s;
-	transition: transform 1s;
-}
-
-.card img{
-	max-width: 100%;
-}
-
-.card:hover{ 
-	position: relative; 
-    transform: rotate(15deg);
- } 
-
-#bottom{
-	display: flex;
-	justify-content: center;
-}
-
-a{
-	text-decoration: none;
-}
-
-.product_sku{
-	float: right;
-}
 
 @media only screen and (min-width: 1000px){
 	#header p{
@@ -190,9 +243,7 @@ a{
 		font-weight: 800;
 		font-size: 2rem;
 	}
-}
 
-@media only screen and (min-width: 1000px){
 	#middle{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
