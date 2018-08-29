@@ -13,7 +13,7 @@ body{
 	display: grid;
 	grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
-	padding:0.2rem;
+	padding:0.5rem;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.5);
 }
@@ -62,9 +62,14 @@ body{
 }
 
 #lower_header p{
+	box-shadow: 0px 2px 5px black;
 	border: 1px solid #2626d8;
 	padding: 2px;
 	border-radius: 3px;
+}
+
+#lower_header p:active{
+	box-shadow: 0px 0px 0px black;
 }
 
 #middle{
@@ -128,7 +133,7 @@ ul.desc{
 	background: white;
 	border-radius: 10px;
 	box-sizing: border-box;
-	border: 0 solid lightblue;
+	box-shadow: 0px 0px 0px white;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
@@ -139,8 +144,8 @@ ul.desc{
 
 .card:hover{ 
 	position: relative; 
-    transform: scale(1.03);
-    border: 3px solid #3e87d6;
+    /*transform: scale(1.03);*/
+    box-shadow: 0px 2px 8px black;
  } 
 
 #bottom{
@@ -208,6 +213,46 @@ div.stars{
     text-align: justify;
 }
 
+[for="email"]{
+	font-size: 1.5rem;
+	display: block;
+}
+
+#contact_form{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+#email{
+	width: 13rem;
+    background-color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px black;
+}
+
+::-webkit-input-placeholder {
+  color: #3e87d6;
+  text-align: center;
+  font-weight: 600;
+}
+
+#submit{
+	color: #3e87d6;
+	padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0px 1px 3px black;
+}
+
+#submit:hover{
+	box-shadow: 0px 0px 0px white;
+	cursor: pointer;
+}
+
+
 
 @media only screen and (min-width: 760px){
 	#header{
@@ -229,8 +274,18 @@ div.stars{
 	}
 
 	#lower_header p{
+		box-sizing: border-box;
 		font-size: 1.7rem;
 		border: 0;
+		padding: 2px;
+		box-shadow: 0px 1px 3px black;
+	    padding: 0.3rem 1rem;
+	    transition: 300ms;
+	}
+
+	#lower_header>p:hover{
+		box-shadow: 0px 0px 0px white;
+		cursor: pointer;
 	}
 
 	.optional{
