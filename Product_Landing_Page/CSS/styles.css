@@ -129,8 +129,8 @@ ul.desc{
 	border-radius: 10px;
 	box-sizing: border-box;
 	border: 0 solid lightblue;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .card img{
@@ -140,7 +140,7 @@ ul.desc{
 .card:hover{ 
 	position: relative; 
     transform: scale(1.03);
-    border: 3px solid lightblue;
+    border: 3px solid #3e87d6;
  } 
 
 #bottom{
@@ -198,6 +198,14 @@ div.stars{
 #video{
 	width: 350px;
 	height: 215px;
+}
+
+#upper .title{
+	margin-top: 0;
+}
+
+#upper .desc{
+	text-align: center;
 }
 
 
