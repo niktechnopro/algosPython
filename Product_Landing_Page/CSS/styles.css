@@ -1,6 +1,6 @@
 body{
 	/*background: blue;*/
-	background: url('../assets/bg.jpg');
+	background: url('http://www.fabulousblogging.com/wp-content/uploads/2012/10/textured_stripes.png');
 	background-attachment: fixed;
 	margin: 0;
 }
@@ -10,12 +10,15 @@ body{
 }
 
 #header{
+	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghauy3QyUkO_eSH0QS31mzcwW5225FrnMASaMFMljdHzctoP7iw');
 	display: grid;
 	grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
 	padding:0.5rem;
 	align-items: center;
 	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+    width: 100%;
 }
 
 #logo{
@@ -51,6 +54,8 @@ body{
 }
 
 #lower_header{
+	/*position: fixed;
+    width: 100%;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -59,7 +64,12 @@ body{
 	color: #2626d8;
 	font-size: 1rem;
 	font-weight: 800;
+	margin-top: 3rem;
 }
+
+/*#main_block{
+	margin-top: 8rem;
+}*/
 
 #lower_header p{
 	box-shadow: 0px 2px 5px black;
