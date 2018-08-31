@@ -11,7 +11,8 @@
 <body>
 
 	<header id="header">
-		<img id="logo" src="http://pluspng.com/img-png/airplane-prop-png-plane-with-propeller-clip-art-300.png" alt="plane logo" />
+	<div id="upper_header">
+		<img id="header-img" src="http://pluspng.com/img-png/airplane-prop-png-plane-with-propeller-clip-art-300.png" alt="plane logo" />
 		<p>Five Stars RC Planes
 		</p>
 		<p>
@@ -21,14 +22,16 @@
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
 		</p>
-	</header>
-	<br />
-	<div id="lower_header">
-		<a href="#upper"><p>Our mission</p></a>
-		<a href="#midsection"><p>Featured model</p></a>
-		<a href="#lower"><p>Our Favorites</p></a>
 	</div>
 	<br />
+	<nav id="nav-bar">
+		<a class="nav-link" href="#upper"><p>Our mission</p></a>
+		<a class="nav-link" href="#midsection"><p>Featured model</p></a>
+		<a class="nav-link" href="#lower"><p>Our Favorites</p></a>
+	</nav>
+	<br />
+	</header>
+
 	<main id="main_block">
 		<section id="upper">
 			<article>
@@ -155,11 +158,11 @@
 		</section>
 	</main>
 	
-	<div id="contact_form">
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
 		<label for="email">To subscibe to our news letter:</label>
-		<input type="email" id="email" placeholder="your email" />
-		<button id="submit">Subscribe</button>
-	</div>
+		<input type="email" id="email" placeholder="your email" required />
+		<input id="submit" type="submit" value="Subscribe" />
+	</form>
 
 	<footer id="footer">
 		<p id="footer">&copy Product Page developped for FreeCodeCamp challenge</p>

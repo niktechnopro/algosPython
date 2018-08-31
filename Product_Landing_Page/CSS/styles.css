@@ -9,7 +9,7 @@ body{
 	text-align: center;
 }
 
-#header{
+#upper_header{
 	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghauy3QyUkO_eSH0QS31mzcwW5225FrnMASaMFMljdHzctoP7iw');
 	display: grid;
 	grid-template-columns: auto 1fr;
@@ -21,13 +21,13 @@ body{
     width: 100%;
 }
 
-#logo{
+#header-img{
 	display: block;
 	max-height: 2.5rem;
 	margin-left: 1rem;
 }
 
-#header p{
+#upper_header p{
 	font-weight: 800;
 	font-size: 1.7rem;
 	margin: 0;
@@ -53,7 +53,7 @@ body{
 	font-size: 1rem;
 }
 
-#lower_header{
+#nav-bar{
 	/*this portion to keep navigation on the screen*/
 	position: fixed;
     width: 100%;
@@ -62,25 +62,24 @@ body{
 	flex-direction: row;
 	justify-content: space-around;
 	list-style-type: none;
-	margin: 0;
+	margin: 3rem 0 0 0;
 	color: #2626d8;
 	font-size: 1rem;
 	font-weight: 800;
-	margin-top: 3rem;
 }
 
 /*#main_block{
 	margin-top: 8rem;
 }*/
 
-#lower_header p{
+#nav-bar p{
 	box-shadow: 0px 2px 5px black;
 	border: 1px solid #2626d8;
 	padding: 2px;
 	border-radius: 3px;
 }
 
-#lower_header p:active{
+#nav-bar p:active{
 	box-shadow: 0px 0px 0px black;
 }
 
@@ -218,7 +217,7 @@ div.stars{
 }
 
 #upper{
-	 margin-top: 5rem;
+	 margin-top: 6rem;
 }
 
 #upper .title{
@@ -234,7 +233,7 @@ div.stars{
 	display: block;
 }
 
-#contact_form{
+#form{
 	text-align: center;
 	margin-top: 1rem;
 }
@@ -255,6 +254,7 @@ div.stars{
 }
 
 #submit{
+	max-width: 100%;
 	color: #3e87d6;
 	padding: 5px;
     border-radius: 5px;
@@ -294,7 +294,7 @@ div.stars{
 /*positioning viewport with jumplinks end*/
 
 @media only screen and (min-width: 760px){
-	#header{
+	#upper_header{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -312,21 +312,15 @@ div.stars{
     	display: inline;
 	}
 
-	#lower_header{
-		display: none;
+	#nav-bar{
+		margin-top: 2rem
 	}
 
-	#lower_header p{
+	#nav-bar p{
 		box-sizing: border-box;
-		font-size: 1.7rem;
-		border: 0;
-		padding: 2px;
-		box-shadow: 0px 1px 3px black;
-	    padding: 0.3rem 1rem;
-	    transition: 300ms;
 	}
 
-	#lower_header p:hover{
+	#nav-bar p:hover{
 		box-shadow: 0px 0px 0px white;
 		cursor: pointer;
 	}
@@ -344,19 +338,32 @@ div.stars{
 		justify-content: space-between;
 	}
 
-	#upper{
-		margin-top: 3rem;
-	}
+	/*#upper{
+		margin-top: 4rem;
+	}*/
 
 	#upper .desc{
 		text-align: center;
 	}
 
+	#midsection:before {
+	    display: block;
+	    content: "";
+	    height: 80px;
+	    margin: -80px 0 0;
+	}
+
+	#lower:before {
+	    display: block;
+	    content: "";
+	    height: 70px;
+	    margin: -70px 0 0;
+	}
 }
 
 
 @media only screen and (min-width: 1000px){
-	#header p{
+	#upper_header p{
 		display: block;
 		font-weight: 800;
 		font-size: 2rem;
