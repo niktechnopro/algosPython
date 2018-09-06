@@ -12,9 +12,9 @@
 			<a href="introduction" rel="internal"><li>Introduction</li></a>
 			<a href="hostname" rel="internal"><li>How to change Hostname</li></a>
 			<a href="motd" rel="internal"><li>How to set up MOTD</li></a>
+			<a href="interfaces" rel="internal"><li>Available interfaces</li></a>
 			<a href="aaa_local" rel="internal"><li>AAA basics</li></a>
 			<a href="aaa_radius" rel="internal"><li>AAA with Radius</li></a>
-			<a href="vpn" rel="internal"><li>Site to Site VPN</li></a>
 		</ul>
 	</nav>
 	<main id="main-doc">
@@ -29,22 +29,81 @@
 			<article>
 				<p>The hostname is used in CLI prompts and default configuration filenames. If you do not configure the router hostname, the router uses the factory-assigned default hostname “Router.”</p>
 				<p>Do not expect capitalization and lowercasing to be preserved in the hostname. Uppercase and lowercase characters are treated as identical by many Internet software applications. It may seem appropriate to capitalize a name as you would ordinarily do, but conventions dictate that computer names appear in all lowercase characters. For more information, see RFC 1178, Choosing a Name for Your Computer.</p>
-				<p>Summary Steps - issue the following commands:</p>
+				<p>Summary Steps:</p>
+				<table>
+				<tr>
+					<th>Command</th>
+					<th>Command Line</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>1.enable</td>
+					<td><code>switch>enable</code></td>
+					<td>this will put you into priviledge EXEC mode</td>
+				</tr>
+				<tr>
+					<td>2.configure terminal</td>
+					<td><code>switch#configure terminal</code></td>
+					<td>enters global configuration mode</td>
+				</tr>
+				<tr>
+					<td>3.hostname &lt;name&gt;</td>
+					<td><code>switch(config)#hostname my_new_switch</code></td>
+					<td>where &lt;my_new_switch&gt; is a new hostname</td>
+				</tr>
+				<tr>
+					<td>4.get out</td>
+					<td><code>my_new_switch(config)#end</code></td>
+					<td>exit to EXEC(privilege) mode</td>
+				</tr>
+			</table>	
 				<ol> 
-					<li>'enable' - this will put you into priviledge mode</li>
-					<li>'configure terminal' - this will put you into global configuration mode</li>
 					<li>'hostname' name - how you want to name the divece</li>
 					<li>Verify that the router prompt displays your new hostname</li>
-					<li>'end' - this will bring you back into priviledge mode</li>
+					<li>'end' - Ends your configuration session by exiting to EXEC(privilege) mode</li>
 				</ol>
 			</article>
 		</section>		
 		<section class="main-section" id="motd">
 			<header>How to set up MOTD</header>
 			<article>
+			<p>To configure the message-of-the-day (MOTD) banner that displays when the user logs in to a Cisco switch/router, use the banner motd command. To revert to the default, use the no form of this command.</p>
+			<p>Summary Steps:</p>
+			<table>
+				<tr>
+					<th>Command</th>
+					<th>Command Line</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>1.enable</td>
+					<td><code>switch>enable</code></td>
+					<td>this will put you into priviledge EXEC mode</td>
+				</tr>
+				<tr>
+					<td>2.configure terminal</td>
+					<td><code>switch#configure terminal</code></td>
+					<td>enters global configuration mode</td>
+				</tr>
+				<tr>
+					<td>3.banner motd &lt;delimiter&gt; message &lt;delimiter&gt;</td>
+					<td><code>switch(config)#banner motd #Welcome#</code></td>
+					<td>where #-indicates the start and end of the message</td>
+				</tr>
+				<tr>
+					<td>4.get out</td>
+					<td><code>switch(config)#end</code></td>
+					<td>exit to EXEC(privilege) mode</td>
+				</tr>
+			</table>	
+			</article>
+		</section>
+		<section class="main-section" id="interfaces">
+			<header>Show available interfaces on device</header>
+			<article>
 				
 			</article>
-		</section>	
+		</section>		
 		<section class="main-section" id="aaa_local">
 			<header>AAA basics</header>
 			<article>
@@ -57,12 +116,9 @@
 				
 			</article>
 		</section>	
-		<section class="main-section" id="vpn">
-			<header>Site to Site VPN</header>
-			<article>
-				
-			</article>
-		</section>	
 	</main>
+	<footer>
+		This page was developed to complete FreeCodeCamp challenge
+	</footer>
 </body>
 </html>

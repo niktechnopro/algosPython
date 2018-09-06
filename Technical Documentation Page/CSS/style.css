@@ -1,5 +1,11 @@
 body{
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	overflow: none;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
