@@ -10,7 +10,8 @@
 		<header>Basics of Cisco IOS</header>
 		<ul>
 			<a href="introduction" rel="internal"><li>Introduction</li></a>
-			<a href="motd" rel="internal"><li>How to set MOTD</li></a>
+			<a href="hostname" rel="internal"><li>How to change Hostname</li></a>
+			<a href="motd" rel="internal"><li>How to set up MOTD</li></a>
 			<a href="aaa_local" rel="internal"><li>AAA basics</li></a>
 			<a href="aaa_radius" rel="internal"><li>AAA with Radius</li></a>
 			<a href="vpn" rel="internal"><li>Site to Site VPN</li></a>
@@ -19,18 +20,48 @@
 	<main id="main-doc">
 		<section class="main-section" id="introduction">
 			<header>Introduction</header>
-		</section>	
+			<article>
+				<p>The following describes how to use the Cisco IOS command-line interface (CLI) to perform a basic software configuration for your router or switch.</p>
+			</article>
+		</section>
+		<section class="main-section" id="hostname">
+			<header>How to change the Hostname</header>
+			<article>
+				<p>The hostname is used in CLI prompts and default configuration filenames. If you do not configure the router hostname, the router uses the factory-assigned default hostname “Router.”</p>
+				<p>Do not expect capitalization and lowercasing to be preserved in the hostname. Uppercase and lowercase characters are treated as identical by many Internet software applications. It may seem appropriate to capitalize a name as you would ordinarily do, but conventions dictate that computer names appear in all lowercase characters. For more information, see RFC 1178, Choosing a Name for Your Computer.</p>
+				<p>Summary Steps - issue the following commands:</p>
+				<ol> 
+					<li>'enable' - this will put you into priviledge mode</li>
+					<li>'configure terminal' - this will put you into global configuration mode</li>
+					<li>'hostname' name - how you want to name the divece</li>
+					<li>Verify that the router prompt displays your new hostname</li>
+					<li>'end' - this will bring you back into priviledge mode</li>
+				</ol>
+			</article>
+		</section>		
 		<section class="main-section" id="motd">
 			<header>How to set up MOTD</header>
+			<article>
+				
+			</article>
 		</section>	
 		<section class="main-section" id="aaa_local">
 			<header>AAA basics</header>
+			<article>
+				
+			</article>
 		</section>	
 		<section class="main-section" id="aaa_radius">
 			<header>AAA with Radius</header>
+			<article>
+				
+			</article>
 		</section>	
 		<section class="main-section" id="vpn">
 			<header>Site to Site VPN</header>
+			<article>
+				
+			</article>
 		</section>	
 	</main>
 </body>
