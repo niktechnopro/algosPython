@@ -9,11 +9,12 @@
 	<nav id="navbar">
 		<header>Basics of Cisco IOS</header>
 		<ul>
-			<li><a href="#introduction" rel="internal">Introduction</a></li>
-			<li><a href="#hostname" rel="internal">How to change Hostname</a></li>
-			<li><a href="#motd" rel="internal">How to set up MOTD</a></li>
-			<li><a href="#interfaces" rel="internal">Available interfaces</a></li>
-			<li><a href="#remote_access" rel="internal">Remote Console Access</a></li>
+			<li><a href="#introduction" class="nav-link" rel="internal">Introduction</a></li>
+			<li><a href="#hostname" class="nav-link" rel="internal">How to change Hostname</a></li>
+			<li><a href="#motd" class="nav-link" rel="internal">How to set up MOTD</a></li>
+			<li><a href="#interfaces" class="nav-link" rel="internal">Available interfaces</a></li>
+			<li><a href="#remote_access" class="nav-link" rel="internal">Remote Console Access</a></li>
+			<li><a href="#reference" class="nav-link" rel="internal">Reference</a></li>
 		</ul>
 	</nav>
 	<main id="main-doc">
@@ -141,7 +142,7 @@
 						<td>enters global configuration mode</td>
 					</tr>
 					<tr>
-						<td>3.line vty line-number [ending-line-number]</td>
+						<td>3.line vty [line-number] [ending-line-number]</td>
 						<td><code>switch(config)#line vty 0 15</code></td>
 						<td>starts the line configuration command collection mode for the virtual terminal lines (vty) for remote console access.</td>
 					</tr>
@@ -152,12 +153,7 @@
 					</tr>
 					<tr>
 						<td>4.login</td>
-						<td><code>switch(config-line)#switch(config-line)#login</code></td>
-						<td>enables password checking at login.</td>
-					</tr>
-					<tr>
-						<td>4.login</td>
-						<td><code>switch(config-line)#switch(config-line)#login</code></td>
+						<td><code>switch(config-line)#login</code></td>
 						<td>enables password checking at login.</td>
 					</tr>
 					<tr>
@@ -167,7 +163,17 @@
 					</tr>
 				</table>	
 			</article>
-		</section>	
+		</section>
+		<section class="main-section" id="reference">
+		    <header>Reference</header>
+		    <article>
+				<li><a href="https://www.cisco.com" target="_blank">All the documentation in this page is taken from Cisco</a></li>
+				<li><a href="https://www.cisco.com/c/en/us/td/docs/routers/access/1800/1841/software/configuration/guide/sw/b_cli.pdf" target="_blank">Basic Software Configuration Using the Cisco IOS Command-Line Interface</a></li>
+				<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3000/sw/command/reference/5_0_3/fund/3k_cmd_ref_fund/3k_cmd_ref_fund_cmds.pdf" target="_blank">Basic System Commands</a></li>
+				<li><a href="https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/15-1/XE_330SG/configuration/guide/config/supcfg.pdf" target="_blank">Configuring the Switch for the First Time</a></li>
+				<li><a href="https://www.cisco.com/c/en/us/td/docs/routers/access/500/520/software/configuration/guide/520_SCG_Book/520scg_basic.pdf" target="_blank">Basic Router Configuration</a></li>
+		    </article>
+    	</section>	
 		<footer>
 		&copy;This page was developed to complete FreeCodeCamp challenge
 		</footer>
