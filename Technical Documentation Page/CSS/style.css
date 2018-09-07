@@ -6,7 +6,7 @@ body{
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 3px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
@@ -73,6 +73,7 @@ a:hover {
 
 #main-doc{
 	position: absolute;
+	margin-top: -5px;
 	margin-left:300px;
 	padding:1rem;
 	background-image: url(http://eastsidedenton.com/wp-content/themes/hipster/assets/images/background/light/wall.png);
@@ -100,4 +101,14 @@ section{
 
 footer{
 	text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+    #navbar{
+		display:none;
+	}
+
+	#main-doc{
+		margin-left:0px;
+	}
 }
