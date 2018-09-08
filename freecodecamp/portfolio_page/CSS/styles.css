@@ -24,7 +24,7 @@ body{
 	justify-content: space-between;
 	background-color: blue;
 	flex-direction: row;
-	border-radius: 1rem;
+	/*border-radius: 1rem;*/
 }
 
 .navigation{
