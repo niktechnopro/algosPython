@@ -1,0 +1,389 @@
+/*sanity check*/
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/bckg.jpg');
+	background-size: cover;/*to stretch for full screen*/
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#wrapper{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;	
+}
+
+/*navbar portion*/
+#navbar{
+	position: fixed;
+  	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: blue;
+	flex-direction: row;
+	z-index: 20;
+}
+
+.navigation{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 1rem;
+	align-items: center;
+}
+
+#me{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+}
+
+.nav-link{
+	text-shadow: 0px 0px 0px #fff, 1px 2px 0px #000;
+	font-size: 1.5rem;
+	text-decoration: none;
+	padding: 0.5rem;
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.nav-link:hover{
+	text-decoration: underline overline;
+}
+/*end of navbar portion*/
+
+/*about me section*/
+#aboutme article{
+	font-size: 1.0rem;
+	text-align: justify;
+	font-family: Lobster, Sans-Serif;
+	padding: 1rem;
+}
+
+section p{
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	font-size: 2.5rem;
+	margin: 0;
+	text-align: center;
+}
+
+.topsection{
+	display: flex;
+	flex-direction: row;
+	padding: 0 2rem;
+	align-items: center;
+}
+
+.topsection img{
+    float: right;
+	align-self: center;/*to make sure the image is not squashed*/
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	padding: 1px 0 0 8px;
+	border: 1px;
+}
+
+hr{
+	border: none;
+	height: 4px;
+	background-color: #333;
+	width: 90%;
+	vertical-align: center;
+}
+
+#aboutme{
+	background-color: #add8e6;
+	/*background-color: rgba(20, 250, 250, 0.5);*/
+	padding-top: 1rem;
+}
+/*end of about me section*/
+
+
+/*start of portfolio section*/
+#portfolio{
+	margin-top: 1rem;
+}
+
+#projects{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: space-around;
+}
+
+#projects img{
+	width: 260px;
+	max-height: 250px;
+	border-radius: 10px;
+	padding: 3px;
+	/*border: 3px solid;*/
+}
+
+.card{
+	margin: 2rem;
+	cursor: pointer;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px white;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.card:hover {
+	box-sizing: border-box;
+    transform: scale(1.03);
+    box-shadow: 0px 2px 8px black;
+}
+/*end of portfolio section*/
+
+/*start of contact section*/
+#contactsection{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #add8e6;
+	border-radius: 1rem;
+}
+
+.leftsection{
+	padding: 3rem 3rem 0 3rem;
+	width: 80%;
+	display: flex;
+	text-align: center;
+}
+
+.rightsection{
+	padding: 3rem;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.rightsection input, textarea{
+	height: 2rem;
+	border-radius: 1rem;
+	outline: none;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.rightsection input:focus {
+	text-align: center;
+}
+
+[type="submit"]{
+	text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
+	font-weight: 600;
+	padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+	margin: 0 auto;
+	box-shadow: 0px 1px 3px black;
+	cursor: pointer;
+	transition: 300ms;
+}
+
+[type="submit"]:hover {
+	background-color: lightgreen;
+}
+
+#textarea{
+	height: 4rem;
+}
+
+::-webkit-input-placeholder{
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.leftsection article{
+	font-size: 1.0rem;
+	text-align: justify;
+}
+/*end of contact section*/
+
+#contact_bottom{
+	text-align: center;
+}
+
+#contact_bottom ul{
+	list-style: none;
+	display: inline;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+
+i.fa{
+	display: inline-block;
+    border-radius: 48px;
+    box-shadow: 0px 1px 3px black;
+    padding: 0.3rem 1rem;
+    transition: 300ms;
+}
+
+.fa{
+	font-size: 36px !important;
+}
+
+i.fa:hover {
+	background-color: grey;
+	box-shadow: 0px 3px 0px white;
+	cursor: pointer;
+}
+
+.totop{
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    color: black;
+    /*margin: -0.5rem 0 -0.5rem 0;*/
+    padding: 0.5rem;
+}
+
+.totop:hover{
+	color: white;
+}
+
+#image{
+    width: 50px;
+    height: 35px;
+    text-align: right;
+    right: 1rem;
+    background-image: url('../images/320px-Cisco_logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title{
+	margin: 1.5rem 0 1.5rem 0;
+}
+
+#logos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0 1rem;
+}
+
+.logo{
+	margin-top: 1rem;
+	width: 3.5rem;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
+  	/*transition: box-shadow 0.2s ease-in-out;*/
+  	padding: 0 0.5rem;
+  	transition: 0.3s all ease-in-out;
+}
+
+.aws{
+	margin-top: 1rem;
+}
+
+.aws .logo{
+	width: 4.5rem;
+}
+
+.js{
+	margin-top: 0.5rem;
+	width: 3rem;
+}
+
+.logo:hover{
+	transform: scale(1.2);
+}
+
+#juniper{
+	height: 273px;
+}
+
+/*footer*/
+footer{
+	/*the following sticks footer on the bottom*/
+	margin-top: auto; 
+	text-align: center;
+	background-color: lightgrey;
+	padding: 1rem;
+}
+/*end of footer*/
+
+/*tooltip section*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: -20;
+    bottom: 40%;
+    left: 50%;
+    margin-left: -60px;
+    -webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    bottom: 105%;
+    z-index: 30;
+}
+/*end of tooltip section*/
+
+@media screen and (min-width: 768px) {
+	#contactsection{
+		flex-direction: row;
+	}
+	.nav-link{
+		font-size: 2rem;
+		padding-right: 1.5rem;
+	}
+
+	li{
+		display: inline;
+		margin: 0 3rem;
+	}
+	#contact_bottom ul{
+		justify-content: center;
+	}
+
+	#aboutme article {
+		font-size: 1.5rem;
+	}
+
+	.leftsection article{
+		font-size: 1.5rem;
+		padding: 3rem;
+	}
+}
+
