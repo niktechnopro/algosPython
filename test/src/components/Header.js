@@ -26,6 +26,11 @@ function Header() {
 }
 
 const Wrapper = styled.div`
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  width: 100%;
   min-width: 305px;
   height: 50px;
   display: flex;

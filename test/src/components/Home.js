@@ -6,7 +6,8 @@ function Home() {
     <Wrapper>
       <div className="title">Welcome to My Page!</div>
       <section>
-        <p>This page was developped with React</p>
+        <p>Developped with React</p>
+        <p>Software development is a fun and exciting way to challenge  problem-solving skills and creativity. It allows me to have a career filled with learning.</p>
       </section>
     </Wrapper>
   );

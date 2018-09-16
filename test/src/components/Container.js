@@ -31,6 +31,8 @@ function Container({ location }) {
   }
   
   const Wrapper = styled.div`
+    margin-top: 3rem;
+
     .fade-enter {
         opacity: 0.01;
     }

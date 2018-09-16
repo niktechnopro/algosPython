@@ -3,3 +3,55 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+hr{
+	border: none;
+	height: 4px;
+	background-color: #333;
+	width: 90%;
+	vertical-align: center;
+}
+
+article{
+  font-size: 1.2rem;
+	text-align: justify;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: -20;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -60px;
+  -webkit-transition: 0.2s;
+transition: 0.2s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  bottom: 115%;
+  z-index: 130;
+}
