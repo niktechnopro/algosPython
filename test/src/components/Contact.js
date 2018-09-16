@@ -94,6 +94,10 @@ const Wrapper = styled.div`
     background-color: #add8e6;
     border-radius: 1rem;
   }
+
+  .rightsection{
+    padding-top: 0;
+  }
   
   div.leftsection{
     padding: 3rem 3rem 0 3rem;
@@ -103,7 +107,7 @@ const Wrapper = styled.div`
   }
   
   form.rightsection{
-    padding: 3rem;
+    padding: 0 3rem 3rem 3rem;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -141,6 +145,7 @@ const Wrapper = styled.div`
   
   #textarea{
     height: 4rem;
+    border: 2px solid #aaa;
   }
   
   ::-webkit-input-placeholder{

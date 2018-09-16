@@ -75,7 +75,7 @@ p.title{
 }
 
 .card:hover {
-	box-sizing: border-box;
-    transform: scale(1.03);
-    box-shadow: 0px 2px 8px black;
+  box-sizing: border-box;
+  transform: scale(1.03);
+  box-shadow: 0px 2px 8px black;
 }
