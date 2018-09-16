@@ -54,14 +54,6 @@ const Wrapper = styled.div`
   padding: 20px;
   text-align: center;
 
-  p.title, p{
-    margin: 1.5rem 0;
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
-    font-size: 2.5rem;
-    margin: 0;
-    text-align: center;
-  }
-
   form p, article p{
     font-size: 1.5rem;
   }

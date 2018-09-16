@@ -4,7 +4,7 @@ import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from "./Home";
 import First from "./First";
-import Second from "./Second";
+import Skills from "./Skills";
 import Contact from "./Contact";
 
 function Container({ location }) {
@@ -20,7 +20,7 @@ function Container({ location }) {
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
                 <Route path="/first" component={First} />
-                <Route path="/second" component={Second} />
+                <Route path="/skills" component={Skills} />
                 <Route path="/contact" component={Contact} />
               </Switch>
             </section>

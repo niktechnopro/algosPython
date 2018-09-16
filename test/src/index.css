@@ -36,7 +36,7 @@ article{
   left: 50%;
   margin-left: -60px;
   -webkit-transition: 0.2s;
-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .tooltip .tooltiptext::after {
@@ -54,4 +54,12 @@ transition: 0.2s;
   visibility: visible;
   bottom: 115%;
   z-index: 130;
+}
+
+p.title{
+  margin: 1.5rem 0;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
 }
