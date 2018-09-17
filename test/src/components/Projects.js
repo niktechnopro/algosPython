@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function First() {
+const Projects = () => {
   return (
     <Wrapper>
 
@@ -15,7 +15,7 @@ function First() {
             <img src="./images/Portfolio/locdocscreenshot.png" alt="Loc Doc Screenshot" />
             <figcaption>
                 <h3>LocDoc</h3>
-                <span className="fixer">React Redux NodeJS<p>Geolocation API and Doctor API Project</p></span>
+                <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
                 <a rel="nofolow" target="_blank" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
             </figcaption>
         </figure>
@@ -32,7 +32,7 @@ function First() {
             <img src="./images/Portfolio/focus.png" alt="Focus! Screenshot" />
             <figcaption>
                 <h3>Focus!</h3>
-                <span className="fixer">Front End Project<p>HTML, Bootstrap/CSS, jQuery</p></span>
+                <span className="fixer">Front End Project <br />HTML, Bootstrap/CSS, jQuery</span>
                 <a rel="nofolow" target="_blank" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
             </figcaption>
         </figure>
@@ -49,7 +49,7 @@ function First() {
             <img src="./images/Portfolio/village.png" alt="Village scresnshot" />
             <figcaption>
                 <h3>Focus!</h3>
-                <span class="fixer">Hackaton against violence Project <p>HTML, Bootstrap/CSS, jQuery, Node.js, Express, MySQL</p></span>
+                <span class="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
                 <a rel="nofolow" target="_blank" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
             </figcaption>
         </figure>
@@ -179,4 +179,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default First;
+export default Projects;
