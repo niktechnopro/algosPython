@@ -10,7 +10,7 @@ const Contact = () => {
 	  <div id="contactsection">
 		<div className="leftsection">
 			<article>
-				Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or to have a coffee with me... just feel free to drop me a line anytime.
+				Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or to have a coffee with me... just free to drop me a line anytime.
 
 				<p>I promise to reply A.S.A.P.</p>
 			</article>	
