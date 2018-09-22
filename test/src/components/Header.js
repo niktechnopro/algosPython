@@ -58,47 +58,47 @@ const Wrapper = styled.div`
     }
   }
 
-  // li:hover{
-  //   background-color:blue;
-  // }
   
-li:before,
-li:after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  background: #259f6c; /* onhover background color */
-  z-index: -1;
-  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
-  transition: all .5s;
-}
-
-
-
-/* //// Curtain Up  //// */
+  li:before,
+  li:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #259f6c; /* onhover background color */
+    // background: #add8e6;
+    z-index: -1;
+    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transition: all .5s;
+  }
 
   li{
     transform-style: preserve-3d;
   }
 
-li:before,
-li:after{
-  transform-origin: center center;
-  transform: scale(1,0);
-}
+  li:before,
+  li:after{
+    transform-origin: center center;
+    transform: scale(1,0);
+  }
 
 
-li:hover:before,
-li:hover:after{
-  transform: scale(1);
-  border-radius: 0;
-}
+  li:hover:before,
+  li:hover:after{
+    transform: scale(1);
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px black;
+  }
 
-
+  li:active:before,
+  li:active:after{
+    transform: scale(1);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0px white;
+  }
 `;
 
 export default Header;
