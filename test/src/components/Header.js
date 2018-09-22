@@ -55,6 +55,13 @@ const Wrapper = styled.div`
       text-decoration: none;
       font-size: 20px;
       color: #333;
+      font-weight: 600;
+    }
+  }
+
+  li:hover{
+    a{
+      color: white;
     }
   }
 
@@ -68,11 +75,11 @@ const Wrapper = styled.div`
     right: 0;
     bottom: 0;
     height: 100%;
-    background: #259f6c; /* onhover background color */
-    // background: #add8e6;
+    // background: #259f6c; /* onhover background color */
+    background: #015460;
     z-index: -1;
     transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
-    transition: all .5s;
+    transition: all .4s;
   }
 
   li{

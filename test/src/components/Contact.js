@@ -54,7 +54,12 @@ const Wrapper = styled.div`
   padding: 20px;
   text-align: center;
 
-  form p, article p{
+  form p{
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  article p{
     font-size: 1.5rem;
   }
 
@@ -133,7 +138,6 @@ const Wrapper = styled.div`
     border-radius: 10px;
     font-size: 1rem;
     margin: 0 auto;
-    box-shadow: 0px 1px 3px black;
     cursor: pointer;
     transition: 300ms;
     background-color: #8debeb;
@@ -141,6 +145,11 @@ const Wrapper = styled.div`
   
   [type="submit"]:hover {
     background-color: #6fef60;
+    box-shadow: 0px 1px 3px black;
+  }
+
+  [type="submit"]:active {
+    background-color: #8debeb;
   }
   
   #textarea{

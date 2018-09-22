@@ -25,7 +25,7 @@ const App = () => {
 }
 
 const Wrapper = styled.div`
-    
+  
 `;
 
 export default App;
