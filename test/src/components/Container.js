@@ -7,7 +7,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
 
-function Container({ location }) {
+let Container = ({ location }) => {
     return (
       <Wrapper>
         <TransitionGroup className="transition-group">

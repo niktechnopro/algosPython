@@ -4,19 +4,18 @@ import styled from "styled-components";
 const Projects = () => {
   return (
     <Wrapper>
-
     <p className="title">Projects</p>
 		<hr />
 
     <div className="cardWrapper">
-      <p>Full-Stack Project</p>  
+      <p className="titles">Full-Stack Project</p>  
       <div className="item-space">
         <figure>
             <img src="./images/Portfolio/locdocscreenshot.png" alt="Loc Doc Screenshot" />
             <figcaption>
                 <h3>LocDoc</h3>
                 <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
-                <a rel="nofolow" target="_blank" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
+                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
@@ -26,14 +25,14 @@ const Projects = () => {
     </div>
 
     <div className="cardWrapper">
-      <p>Front-End Project</p>  
+      <p className="titles">Front-End Project</p>  
       <div className="item-space">
         <figure>
             <img src="./images/Portfolio/focus.png" alt="Focus! Screenshot" />
             <figcaption>
                 <h3>Focus!</h3>
                 <span className="fixer">Front End Project <br />HTML, Bootstrap/CSS, jQuery</span>
-                <a rel="nofolow" target="_blank" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
+                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p class="desc">
@@ -43,14 +42,14 @@ const Projects = () => {
     </div>
 
     <div className="cardWrapper">
-      <p className>Hackathon Project</p>  
+      <p className="titles">Hackathon Project</p>  
       <div className="item-space">
         <figure>
             <img src="./images/Portfolio/village.png" alt="Village scresnshot" />
             <figcaption>
                 <h3>Focus!</h3>
                 <span class="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
-                <a rel="nofolow" target="_blank" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
+                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
@@ -170,13 +169,18 @@ const Wrapper = styled.div`
     font-size: 0.8rem;
   }
   
-  .desc{
+  .desc, .titles{
     color: black;
-    font-size: 1rem;
-    text-align: center;
     font-family: Lobster, Sans-Serif;
     margin-bottom: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-style: italic;
+    text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
+
 `;
 
 export default Projects;

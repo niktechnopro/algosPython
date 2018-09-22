@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Home() {
+let Home = () => {
   return (
     <Wrapper>
       <div class="fullscreen-bg">
@@ -27,10 +27,13 @@ const Wrapper = styled.div`
   padding: 1rem;
   text-align: center;
 
-  div.title {
+  .title {
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    font-style: italic;
+    text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
 
   img {
@@ -40,6 +43,13 @@ const Wrapper = styled.div`
     padding: 0 1rem;
   }
 
+  article{
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
+  }
+
   .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -47,7 +57,7 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     z-index: 1;
-    opacity: .1;
+    opacity: .15;
     overflow: hidden;
   }
 

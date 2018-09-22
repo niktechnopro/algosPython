@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Skills() {
+let Skills = () => {
   return (
     <Wrapper>
       <section id="other">
@@ -67,6 +67,9 @@ function Skills() {
         </div>
       </section>
       <section id="skills">
+        <br />
+        <br />
+        <br />
         <p class="title">Skills I picked up while working for AT&T</p>
         <hr />
         <div id="projects">
@@ -156,7 +159,6 @@ const Wrapper = styled.div`
   #projects{
     text-align: center;
   }
-
 `;
 
 export default Skills;

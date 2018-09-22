@@ -59,9 +59,10 @@ article{
 p.title{
   margin: 1.5rem 0;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   text-align: center;
+  font-style: italic;
 }
 
 .card{
@@ -79,3 +80,6 @@ p.title{
   transform: scale(1.03);
   box-shadow: 0px 2px 8px black;
 }
+
+
+
