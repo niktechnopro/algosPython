@@ -5,6 +5,15 @@ import Header from './components/Header';
 import Container from './components/Container';
 import Footer from './components/Footer';
 
+let imgUrl = './opt.png'
+let styles = {
+    root: {
+        backgroundImage: `url(${ imgUrl })`,
+        backgroundRepeat  : 'no-repeat',
+        backgroundPosition: 'center',
+  }
+}
+
 const App = () => {
     return (
       <Wrapper>
@@ -16,6 +25,7 @@ const App = () => {
 }
 
 const Wrapper = styled.div`
+    
 `;
 
 export default App;

@@ -12,7 +12,7 @@ const Contact = () => {
 			<article>
 				Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or to have a coffee with me... just free to drop me a line anytime.
 
-				<p>I promise to reply A.S.A.P.</p>
+				<p style={{textAlign: 'center'}}>I promise to reply A.S.A.P.</p>
 			</article>	
 		</div>
 		<form className="rightsection" action="https://formspree.io/ciscoscholar@gmail.com" method="POST">
