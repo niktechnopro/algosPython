@@ -6,7 +6,7 @@ const Projects = () => {
     <Wrapper>
     <p className="title">Projects</p>
 		<hr />
-
+    <div id="body">
     <div className="cardWrapper">
       <p className="titles">Full-Stack Project</p>  
       <div className="item-space">
@@ -57,7 +57,7 @@ const Projects = () => {
         </p>
       </div>
     </div>
-
+    </div>
     </Wrapper>
   );
 }
@@ -179,6 +179,19 @@ const Wrapper = styled.div`
     margin-bottom: 1rem;
     font-style: italic;
     text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
+  }
+
+  @media only screen and (min-width: 780px){
+    #body{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .title{
+      text-align: center;
+    }
   }
 
 `;

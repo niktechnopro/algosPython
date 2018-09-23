@@ -252,7 +252,7 @@ const Wrapper = styled.div`
     text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
 
-  @media only screen and (min-width: 780px) {
+  @media only screen and (min-width: 1180px) {
     #contactsection{
       flex-direction: row;
       max-width: 90%;

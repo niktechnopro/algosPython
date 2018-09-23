@@ -58,6 +58,11 @@ let Container = ({ location }) => {
       top: 0;
       left: 0;
     }
+
+    @media only screen and (min-width: 780px) {
+      margin-left: 305px;
+      margin-top: 0;
+    }
 `;
   
   export default withRouter(Container);

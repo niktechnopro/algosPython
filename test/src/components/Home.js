@@ -25,7 +25,7 @@ let Home = () => {
 
 
 const Wrapper = styled.div`
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 
   .title {
@@ -88,7 +88,7 @@ const Wrapper = styled.div`
     }
 
     div.title{
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
   }
 

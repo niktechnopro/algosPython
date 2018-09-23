@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <Wrapper>
-      <p>Hi, my name is Nikolas</p>
-
       <ul>
         <li>
           <Link to="/">About</Link>
@@ -37,10 +35,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5;
-
-  p{
-    display: none;
-  }
 
   ul {
     margin: 0;
@@ -105,6 +99,39 @@ const Wrapper = styled.div`
     transform: scale(1);
     border-radius: 0.5rem;
     box-shadow: 0px 0px 0px white;
+  }
+
+  @media only screen and (min-width: 780px) {
+      height: 100%;
+      width: 160px;
+      position: fixed;
+      // z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #f5f5f5;
+      justify-content: center;
+      overflow-x: hidden;
+      padding-top: 20px;
+      align-items: flex-start;
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    li {
+      display: block;
+      padding: 1.5rem;
+  
+      a {
+        text-decoration: none;
+        font-size: 3.2rem;
+        color: #blue;
+        font-weight: 600;
+        padding: 1.5rem;
+      }
+    }
   }
 `;
 
