@@ -56,7 +56,7 @@ class Contact extends Component{
       <div id="contactsection">
       <div className="leftsection">
         <article>
-          Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or to have a coffee with me... just free to drop me a line anytime.
+          Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or to have a coffee with me... just feel free to drop me a line anytime.
 
           <p style={{textAlign: 'center'}}>I promise to reply A.S.A.P.</p>
         </article>	
@@ -108,8 +108,8 @@ const Wrapper = styled.div`
   min-height: calc(100vh - 50px);
   padding: 20px;
   text-align: center;
-  background-image: url(${img});
   height: 100%;
+  background-image: url(${img});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -251,6 +251,25 @@ const Wrapper = styled.div`
     line-height: 1.5rem;
     text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
+
+  @media only screen and (min-width: 780px) {
+    #contactsection{
+      flex-direction: row;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    .resumeClose{
+      top: 100px;
+    }
+
+    div.leftsection{
+      padding: 0 3rem;
+    }
+
+    .title{
+      margin-top: 5%;
+    }
 
 `;
 

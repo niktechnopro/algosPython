@@ -13,7 +13,8 @@ let Home = () => {
         <article>
         <img src="./images/profile.jpg" alt="profile image" />
 				<span>
-            <p>I'm a full-stack developer with the interest in responsive design and best practices in web development. I have a strong passion for my work, and strongly believe that software development is a fun and exciting way to challenge  problem-solving skills and creativity. It allows me to have a career filled with learning.</p>   
+            <p>I'm a full-stack developer with the interest in responsive design and best practices in web development. I have a strong passion to learn and implement, and strongly believe that software development is a fun and exciting way to challenge  problem-solving skills and creativity. It allows me to have a career filled with learning.</p>
+            <br />   
             <div className="title">Brief Bio</div>       
           I was trained as an electronics engineer and spent some time working in the consumer electronics industry. As a personal development I have earned CompTIA certifications, that provided me with a solid grounding in the technology concepts and practices. The need for network troubleshooting, prompted me take CS Computer Networks class from GA Tech in addition to certifying with Cisco and Juniper. Diving into computer programming was a logical choice from there. I started with Python, played with Ruby and transitioned into JavaScript.
 				</span>
@@ -66,6 +67,29 @@ const Wrapper = styled.div`
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+
+  @media only screen and (min-width: 780px){
+    padding: 2rem;
+
+
+    img {
+      max-width: 12rem;
+      border-radius: 50%;
+      float: left;
+      padding: 0 1rem;
+    }
+
+    article{
+      font-style: italic;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
+    }
+
+    div.title{
+      margin-top: 3rem;
+    }
   }
 
 `;

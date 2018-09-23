@@ -113,7 +113,7 @@ const Wrapper = styled.div`
     margin-top: 1rem;
     width: 3.5rem;
     box-shadow: 0px 0px 0px rgba(0,0,0,0.15);
-    /*transition: box-shadow 0.2s ease-in-out;*/
+    transition: box-shadow 0.2s ease-in-out;
     padding: 0 1.2rem;
     transition: 0.3s all ease-in-out;
   }
@@ -159,6 +159,21 @@ const Wrapper = styled.div`
   #projects{
     text-align: center;
   }
+
+  @media only screen and (min-width: 780px){
+    #logos{
+      margin: 2rem 2rem;
+    }
+
+    .card img{
+      width: 10rem;
+    }
+
+    .logo{
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+    }
+  }  
 `;
 
 export default Skills;
