@@ -11,11 +11,11 @@ let Home = () => {
       </div>
         <div className="title">Hello, my name is Nikolas</div>
         <article>
-        <img src="./images/profile.jpg" alt="Nikolas's image" />
+        <img src="./images/profile.jpg" alt="profile image" />
 				<span>
-            <p>I'm a full-stack developer with an interest in responsive design and best practices in web development. I have a strong passion for my work, and strongly believe that software development is a fun and exciting way to challenge  problem-solving skills and creativity. It allows me to have a career filled with learning.</p>   
+            <p>I'm a full-stack developer with the interest in responsive design and best practices in web development. I have a strong passion for my work, and strongly believe that software development is a fun and exciting way to challenge  problem-solving skills and creativity. It allows me to have a career filled with learning.</p>   
             <div className="title">Brief Bio</div>       
-          I was trained as an electronics engineer and spent some time working in the consumer electronics industry while earning CompTIA certifications, that provided me with a solid grounding in the technology concepts and practices. The need for basic network troubleshooting, prompted me take CS Computer Networks class from GA Tech in addition to certifying with Cisco and Juniper. Diving into computer programming was a logical choice from there. I started with Python, played with Ruby and transitioned into JavaScript.
+          I was trained as an electronics engineer and spent some time working in the consumer electronics industry. As a personal development I have earned CompTIA certifications, that provided me with a solid grounding in the technology concepts and practices. The need for network troubleshooting, prompted me take CS Computer Networks class from GA Tech in addition to certifying with Cisco and Juniper. Diving into computer programming was a logical choice from there. I started with Python, played with Ruby and transitioned into JavaScript.
 				</span>
 			</article>
     </Wrapper>
@@ -45,8 +45,8 @@ const Wrapper = styled.div`
 
   article{
     font-style: italic;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
 

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 import 'font-awesome/css/font-awesome.min.css';
+import img from '../bckg.jpg';
 
 class Contact extends Component{
   constructor(props) {
@@ -39,10 +40,13 @@ class Contact extends Component{
     }
   }
     setTimeout(()=>{
+    elem.remove();
+    obj.remove();
     this.setState({
       modalOpen: false
     })}, 1000);
   }
+
   render(){
     return (
       <div>
@@ -74,11 +78,11 @@ class Contact extends Component{
         <ul>
           <li className="tooltip">
             <span className="tooltiptext">click, to see my Linkedin page</span>
-            <a rel="nofolow" target="_blank" className="linkedin" href="https://www.linkedin.com/in/niktechnopro"><i class="fa fa-linkedin"></i></a>
+            <a target="_blank" rel="noopener noreferrer" className="linkedin" href="https://www.linkedin.com/in/niktechnopro"><i className="fa fa-linkedin"></i></a>
           </li>
           <li className="tooltip">
             <span className="tooltiptext">click, to see my GitHub page</span>
-            <a rel="nofolow" target="_blank" className="github" href="https://github.com/niktechnopro"><i className="fa fa-github"></i></a>
+            <a rel="noopener noreferrer" target="_blank" className="github" href="https://github.com/niktechnopro"><i className="fa fa-github"></i></a>
           </li>
           <li className="tooltip">
             <span className="tooltiptext">check out my resume</span>
@@ -88,7 +92,7 @@ class Contact extends Component{
         <hr />
       </div>
       {this.state.modalOpen && <div>
-      <a onClick={this.closeResume} className="resumeClose"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <a rel="noopener noreferrer" onClick={this.closeResume} className="resumeClose"><i class="fa fa-window-close" aria-hidden="true"></i></a>
       <object data="./resume/creativeResume.pdf#view=FitV" type="application/pdf" width="100%" height="850">
             <p id="resumeerror">
                 It appears your Web browser is not configured to display PDF files. No worries, just <a rel="nofolow" href="./resume/creativeResume.pdf">click here to download the PDF file.</a>
@@ -104,6 +108,11 @@ const Wrapper = styled.div`
   min-height: calc(100vh - 50px);
   padding: 20px;
   text-align: center;
+  background-image: url(${img});
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
   form p{
     font-size: 1.5rem;

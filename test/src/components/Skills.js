@@ -75,27 +75,27 @@ let Skills = () => {
         <div id="projects">
           <div class="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" class="github" href="https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=XK0GKBNK2MR110G5">
             <span class="tooltiptext">Click on me</span>
-            <img src="./images/certs/Aplus.png" /></a>
+            <img src="./images/certs/Aplus.png" alt="Aplus" /></a>
           </div>
           <div class="tooltip card">
             <span class="tooltiptext">Click on me</span><a rel="nofolow noopener noreferrer" target="_blank" class="github" href="https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=XK0GKBNK2MR110G5">
-            <img src="./images/certs/NetworkPlus.png" /></a>
+            <img src="./images/certs/NetworkPlus.png" alt="NetworkPlus" /></a>
           </div>
           <div class="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" class="github" href="https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=XK0GKBNK2MR110G5">
             <span class="tooltiptext">Click on me</span>
-            <img src="./images/certs/SecurityPlus.png" /></a>
+            <img src="./images/certs/SecurityPlus.png" alt="securityPlus" /></a>
           </div>
           <div class="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" class="github" href="https://www.youracclaim.com/badges/5fed44d5-a72e-4f09-9762-a6001d0f121b/public_url">
             <span class="tooltiptext">Click on me</span>
-            <img id="juniper" src="./images/certs/JNCIA.png" /></a>
+            <img id="juniper" src="./images/certs/JNCIA.png" alt="JNCIA" /></a>
           </div>
           <div class="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" class="github" href="https://www.youracclaim.com/badges/cee493bc-a7e3-43c7-8e3d-9fa7fbcd871b/public_url">
             <span class="tooltiptext">Click on me</span>
-            <img src="./images/certs/CCNA.png" /></a>
+            <img src="./images/certs/CCNA.png" alt="CCNA" /></a>
           </div>
           <div class="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" class="github" href="https://www.youracclaim.com/badges/298adf90-1fce-4b72-8e5c-f3d61f9a6c9b/public_url">
             <span class="tooltiptext">Click on me</span>
-            <img src="./images/certs/CCNASEC.png" /></a>
+            <img src="./images/certs/CCNASEC.png" alt="CCNASEC" /></a>
           </div>
         </div>	
 	    </section>
@@ -106,7 +106,7 @@ let Skills = () => {
 const Wrapper = styled.div`
   min-height: calc(100vh - 50px);
   // background-color: #b0d3da;
-  background-color: #fff;
+  // background-color: #fff;
   padding: 20px;
 
   .logo{
