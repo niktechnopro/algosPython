@@ -53,7 +53,7 @@ article{
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  bottom: 115%;
+  bottom: 85%;
   z-index: 130;
 }
 
