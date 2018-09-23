@@ -269,6 +269,7 @@ const Wrapper = styled.div`
 
     .title{
       margin-top: 5%;
+      padding: 1.5rem;
     }
 
 `;
