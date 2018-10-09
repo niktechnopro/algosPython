@@ -6,7 +6,6 @@ import img from '../bckg.jpg';
 class Contact extends Component{
   constructor(props) {
     super(props);
-    // Don't call this.setState() here!
     this.state = {
        counter: 0,
        modalOpen: false,
@@ -24,7 +23,7 @@ class Contact extends Component{
     let obj = document.querySelector('object');
     let pos = 50;
     let pos1 = 100;
-    let id = setInterval(frame, 5);
+    let id = setInterval(frame, 1);
     function frame() {
     if (pos < -50) {
       clearInterval(id);
@@ -32,11 +31,11 @@ class Contact extends Component{
       pos--; 
       elem.style.top = pos + 'px'; 
     }
-    if (pos1 < 1) {
+    if (pos1 < 0) {
       clearInterval(id);
     } else {
       pos1--; 
-      obj.style.width = pos1 + '%'; 
+      obj.style.opacity = pos1/100;  
     }
   }
     setTimeout(()=>{
@@ -44,7 +43,7 @@ class Contact extends Component{
     obj.remove();
     this.setState({
       modalOpen: false
-    })}, 1000);
+    })}, 1500);
   }
 
   render(){
@@ -95,7 +94,7 @@ class Contact extends Component{
       <a rel="noopener noreferrer" onClick={this.closeResume} className="resumeClose"><i class="fa fa-window-close" aria-hidden="true"></i></a>
       <object data="./resume/creativeResume.pdf#view=FitV" type="application/pdf" width="100%" height="850">
             <p id="resumeerror">
-                It appears your Web browser is not configured to display PDF files. No worries, just <a rel="nofolow" href="./resume/creativeResume.pdf">click here to download the PDF file.</a>
+                It appears your Web browser is not configured to display PDF files. No worries,<br /><a rel="nofolow noopener noreferrer" href="./resume/creativeResume.pdf">just click here to download the PDF file.</a>
             </p>
         </object></div>}
       </Wrapper>
@@ -246,6 +245,27 @@ const Wrapper = styled.div`
   }
 
   article{
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
+  }
+
+  #resumeerror{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.9);
+    padding: 10%;
+    width: 60%;
+    border-radius: 15px;
+    font-size: 1.5rem;
     font-style: italic;
     font-size: 1.3rem;
     line-height: 1.5rem;

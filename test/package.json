@@ -2,9 +2,9 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
-  "engines":{
-    "npm" : "5.6.0",
-    "node" : "8.9.4"
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.9.4"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
