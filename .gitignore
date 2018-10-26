@@ -4,4 +4,5 @@ Image_To_S3/server/node_modules
 Image_To_S3/server/config
 framework/front/node_modules
 framework/back-end/node_modules
+node_modules/*
 
