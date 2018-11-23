@@ -82,5 +82,38 @@ p.title{
   box-shadow: 0px 2px 8px black;
 }
 
+.tooltip-project .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: -20;
+  bottom: 60%;
+  left: 22%;
+  margin-left: -60px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.tooltip-project .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip-project:hover .tooltiptext {
+  visibility: visible;
+  bottom: 85%;
+  z-index: 130;
+}
 
 

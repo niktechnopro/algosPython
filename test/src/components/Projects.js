@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Projects = () => {
@@ -7,6 +8,27 @@ const Projects = () => {
     <p className="title">Projects</p>
 		<hr />
     <div id="body">
+
+    <div className="cardWrapper">
+      <p className="titles">Wisdom Box</p>
+      <div className="item-space">
+        <div className="tooltip-project">
+        <span class="tooltiptext">Click on picture to see it in action</span>  
+        <figure>
+            <Link to="/demos/wisdombox/"><img src="./images/Portfolio/wisdomBox.png" alt="Village scresnshot" /></Link>
+            <figcaption>
+                <h3>Wisdom Box</h3>
+                <span class="fixer">This is a "quotemachine" project from <br />FreeCodeCamp. React+Redux, Animate CSS</span>
+                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/quotemachine" className="button">GitHub</a>
+            </figcaption>
+        </figure>
+        </div>
+        <p className="desc">
+          Wisdom Box - quotes from famous people
+        </p>
+      </div>
+    </div>
+
     <div className="cardWrapper">
       <p className="titles">Full-Stack Project</p>  
       <div className="item-space">

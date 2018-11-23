@@ -10,8 +10,8 @@ import App from './App';
 //createStore - creates new instance of a store.
 
 let store = createStore(rootReducer, {}, applyMiddleware(thunk));
-console.log('store: ', store);
-console.log('get state: ',store.getState());
+// console.log('store: ', store);
+// console.log('get state: ',store.getState());
 
 ReactDOM.render(
 	<Provider store={store}>
