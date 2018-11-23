@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Projects = () => {
@@ -11,18 +11,18 @@ const Projects = () => {
 
     <div className="cardWrapper">
       <p className="titles">Wisdom Box</p>
-      <div className="item-space">
-        <div className="tooltip-project">
-        <span class="tooltiptext">Click on picture to see it in action</span>  
+      <div className="item-space"> 
         <figure>
-            <Link to="/demos/wisdombox/"><img src="./images/Portfolio/wisdomBox.png" alt="Village scresnshot" /></Link>
+          <div className="tooltip-project">
+          <span class="tooltiptext">Click on picture to open it in new window</span> 
+            <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/wisdombox"><img src="./images/Portfolio/wisdomBox.png" alt="Village scresnshot" /></a>  
             <figcaption>
                 <h3>Wisdom Box</h3>
                 <span class="fixer">This is a "quotemachine" project from <br />FreeCodeCamp. React+Redux, Animate CSS</span>
                 <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/quotemachine" className="button">GitHub</a>
             </figcaption>
+          </div>
         </figure>
-        </div>
         <p className="desc">
           Wisdom Box - quotes from famous people
         </p>

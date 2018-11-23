@@ -92,11 +92,11 @@ p.title{
   padding: 5px 0;
   position: absolute;
   z-index: -20;
-  bottom: 60%;
-  left: 22%;
+  bottom: 30%;
+  left: 38%;
   margin-left: -60px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .tooltip-project .tooltiptext::after {
