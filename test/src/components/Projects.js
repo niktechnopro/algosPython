@@ -13,15 +13,14 @@ const Projects = () => {
       <p className="titles">Wisdom Box</p>
       <div className="item-space"> 
         <figure>
-          <div className="tooltip-project">
-          <span class="tooltiptext">Click on picture to open it in new window</span> 
-            <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/wisdombox"><img src="./images/Portfolio/wisdomBox.png" alt="Village scresnshot" /></a>  
+            <img src="./images/Portfolio/wisdomBox.png" alt="Village scresnshot" />  
             <figcaption>
-                <h3>Wisdom Box</h3>
-                <span class="fixer">This is a "quotemachine" project from <br />FreeCodeCamp. React+Redux, Animate CSS</span>
-                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/quotemachine" className="button">GitHub</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/wisdombox">
+                  <h3>Wisdom Box - click on me</h3>
+                </a>
+                <span class="fixer">FreeCodeCamp project "Quotemachine". <br /> Built with React+Redux, Animate CSS</span>
+                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/quotemachine" className="button">GitHub</a>
             </figcaption>
-          </div>
         </figure>
         <p className="desc">
           Wisdom Box - quotes from famous people
@@ -37,7 +36,7 @@ const Projects = () => {
             <figcaption>
                 <h3>LocDoc</h3>
                 <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
-                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
+                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
@@ -54,7 +53,7 @@ const Projects = () => {
             <figcaption>
                 <h3>Focus!</h3>
                 <span className="fixer">Front End Project <br />HTML, Bootstrap/CSS, jQuery</span>
-                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
+                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p class="desc">
@@ -71,7 +70,7 @@ const Projects = () => {
             <figcaption>
                 <h3>Focus!</h3>
                 <span class="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
-                <a rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
+                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
@@ -136,13 +135,6 @@ const Wrapper = styled.div`
     color: #fff;
   }
   
-  .item-space figcaption a {
-    text-align: center;
-    padding: 8px 15px;
-    display: inline-block;
-    color: #fff;
-  }
-  
   .item-space figure {
     overflow: hidden;
   }
@@ -155,18 +147,26 @@ const Wrapper = styled.div`
     transform: translateY(-25px) scaleX(1.01);
   }
   
-  .item-space figcaption a {
+  #github-link {
     position: absolute;
     bottom: 31px;
     right: 3rem;
+    text-align: center;
+    padding: 8px 15px;
+    color: #fff;
   }
+
+  figcaption #github-link{
+    text-decoration: none;
+  }
+
   .button{
     background: transparent;
     border: 1px solid #fff;
     transition: 0.4s ease;
   }
+
   .button:hover {
-    text-decoration: none;
     background: white;
     color: #000;
   }
@@ -202,6 +202,19 @@ const Wrapper = styled.div`
     font-style: italic;
     text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
+
+  [target='_blank']{
+    text-decoration: none;
+  }
+
+  [target='_blank']:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+
+
+
 
   @media only screen and (min-width: 780px){
     #body{
