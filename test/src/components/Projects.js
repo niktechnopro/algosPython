@@ -68,7 +68,7 @@ const Projects = () => {
         <figure>
             <img src="./images/Portfolio/village.png" alt="Village scresnshot" />
             <figcaption>
-                <h3>Focus!</h3>
+                <h3>Village</h3>
                 <span class="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
                 <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
             </figcaption>
