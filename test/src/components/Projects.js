@@ -5,6 +5,11 @@ import styled from "styled-components";
 const Projects = () => {
   return (
     <Wrapper>
+    <div id="background-img">
+      <img src="./images/computerbook.png" />
+    </div>
+
+
     <p className="title">Projects</p>
 		<hr />
     <div id="body">
@@ -86,7 +91,24 @@ const Projects = () => {
 const Wrapper = styled.div`
   min-height: calc(100vh - 50px);
   // background-color: #00d38a;
-  padding: 20px;
+  // padding: 20px;
+
+  #background-img{
+    width: 100%;
+    position: fixed;
+    opacity: 0.3;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+  }
+
+  #background-img img{
+    min-width: 100%;
+    min-height: 100%;
+    // height: auto;
+  }
 
   .cardWrapper{
     margin: 0 auto;
@@ -212,8 +234,9 @@ const Wrapper = styled.div`
     color: white;
   }
 
-
-
+  .title{
+    padding-top: 20px;4rfce4
+  }
 
 
   @media only screen and (min-width: 780px){
