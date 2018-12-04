@@ -91,7 +91,7 @@ class Contact extends Component{
         <hr />
       </div>
       {this.state.modalOpen && <div>
-      <a rel="noopener noreferrer" onClick={this.closeResume} className="resumeClose"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+      <a rel="noopener noreferrer" onClick={this.closeResume} className="resumeClose"><i className="fa fa-window-close"></i></a>
       <object data="./resume/creativeResume.pdf#view=FitV" type="application/pdf" width="100%" height="850">
             <p id="resumeerror">
                 It appears your Web browser is not configured to display PDF files. No worries,<br /><a rel="nofolow noopener noreferrer" href="./resume/creativeResume.pdf">just click here to download the PDF file.</a>

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Wrapper>
     <div id="background-img">
-      <img src="./images/computerbook.png" />
+      <img src="./images/computerbook.png" alt="computer" />
     </div>
 
 
@@ -23,8 +23,8 @@ const Projects = () => {
                 <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/wisdombox">
                   <h3>Wisdom Box - click on me</h3>
                 </a>
-                <span class="fixer">FreeCodeCamp project "Quotemachine". <br /> Built with React+Redux, Animate CSS</span>
-                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/quotemachine" className="button">GitHub</a>
+                <span className="fixer">FreeCodeCamp project "Quotemachine". <br /> Built with React+Redux, Animate CSS</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/quotemachine" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
@@ -41,7 +41,7 @@ const Projects = () => {
             <figcaption>
                 <h3>LocDoc</h3>
                 <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
-                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
@@ -58,10 +58,10 @@ const Projects = () => {
             <figcaption>
                 <h3>Focus!</h3>
                 <span className="fixer">Front End Project <br />HTML, Bootstrap/CSS, jQuery</span>
-                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
             </figcaption>
         </figure>
-        <p class="desc">
+        <p className="desc">
           Focus! - A timer based on the Pomodoro time management technique that includes entertainment
         </p>
       </div>
@@ -74,8 +74,8 @@ const Projects = () => {
             <img src="./images/Portfolio/village.png" alt="Village scresnshot" />
             <figcaption>
                 <h3>Village</h3>
-                <span class="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
-                <a id="github-link" rel="nofolow" target="_blank" rel="noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
+                <span className="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">

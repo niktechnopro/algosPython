@@ -4,14 +4,14 @@ import styled from "styled-components";
 let Home = () => {
   return (
     <Wrapper>
-      <div class="fullscreen-bg">
+      <div className="fullscreen-bg">
         <video loop muted autoPlay className="fullscreen-bg__video">
             <source src="./images/bg-video.mp4" type="video/mp4" />
         </video>
       </div>
         <div className="title">Hello, my name is Nikolas</div>
         <article>
-        <img src="./images/profile.jpg" alt="profile image" />
+        <img src="./images/profile.jpg" alt="myself" />
 				<span>
             <p>I'm a full-stack developer with the interest in responsive design and best practices in web development. I have a strong passion to learn and implement, and strongly believe that software development is a fun and exciting way to challenge  problem-solving skills and creativity. It allows me to have a career filled with learning.</p>
             <br />   
