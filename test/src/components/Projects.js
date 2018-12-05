@@ -96,7 +96,7 @@ const Wrapper = styled.div`
   #background-img{
     width: 100%;
     position: fixed;
-    opacity: 0.3;
+    opacity: 0.25;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -134,6 +134,7 @@ const Wrapper = styled.div`
     max-width: 400px;
     margin: 0;
     position: relative;
+    border: 3px solid #f5f5f5;
   }
   
   .item-space figure img {
