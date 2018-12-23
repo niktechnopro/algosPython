@@ -67,23 +67,24 @@ let Skills = () => {
         </div>
       </section>
       <section id="skills">
-        <br />
-        <br />
-        <br />
         <p className="title">Skills I picked up while working for AT&T</p>
         <hr />
         <div id="projects">
-          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=XK0GKBNK2MR110G5">
+          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/f1f4c0e4-6557-4613-8fd0-418b6a4b40b3/public_url">
             <span className="tooltiptext">Click on me</span>
-            <img src="./images/certs/Aplus.png" alt="Aplus" /></a>
+            <img src="./images/certs/Aplus.png" alt="A+ badge" /></a>
           </div>
           <div className="tooltip card">
-            <span className="tooltiptext">Click on me</span><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=XK0GKBNK2MR110G5">
-            <img src="./images/certs/NetworkPlus.png" alt="NetworkPlus" /></a>
+            <span className="tooltiptext">Click on me</span><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/e319109b-607b-4de6-b0da-a904a0290efa/public_url">
+            <img src="./images/certs/NetworkPlus.png" alt="Network+ badge" /></a>
           </div>
-          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=XK0GKBNK2MR110G5">
+          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/f2fab3c3-a902-44a3-87a9-794207a464f0/public_url">
             <span className="tooltiptext">Click on me</span>
-            <img src="./images/certs/SecurityPlus.png" alt="securityPlus" /></a>
+            <img src="./images/certs/SecurityPlus.png" alt="security+ badge" /></a>
+          </div>
+          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/d57cf28e-1340-4705-99a3-69802bd4b9e9">
+            <span className="tooltiptext">Click on me</span>
+            <img src="./images/certs/CIOS.png" alt="CIOS badge" /></a>
           </div>
           <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/5fed44d5-a72e-4f09-9762-a6001d0f121b/public_url">
             <span className="tooltiptext">Click on me</span>
@@ -108,6 +109,11 @@ const Wrapper = styled.div`
   // background-color: #b0d3da;
   // background-color: #fff;
   padding: 20px;
+
+  #other{
+    border: 3px solid blue;
+    margin-bottom: 1rem;
+  }
 
   .logo{
     margin-top: 1rem;
@@ -150,6 +156,7 @@ const Wrapper = styled.div`
 
   #skills{
     margin-top: 1rem;
+    border: 3px solid blue;
   }
 
   .card img{
