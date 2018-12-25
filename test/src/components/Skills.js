@@ -82,9 +82,13 @@ let Skills = () => {
             <span className="tooltiptext">Click on me</span>
             <img src="./images/certs/SecurityPlus.png" alt="security+ badge" /></a>
           </div>
-          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/d57cf28e-1340-4705-99a3-69802bd4b9e9">
+          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/d57cf28e-1340-4705-99a3-69802bd4b9e9/public_url">
             <span className="tooltiptext">Click on me</span>
             <img src="./images/certs/CIOS.png" alt="CIOS badge" /></a>
+          </div>
+          <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/2f1d0793-53e7-44b7-a0cb-6841b0d05e0c/public_url">
+            <span className="tooltiptext">Click on me</span>
+            <img src="./images/certs/CSIS.png" alt="CSIS badge" /></a>
           </div>
           <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/5fed44d5-a72e-4f09-9762-a6001d0f121b/public_url">
             <span className="tooltiptext">Click on me</span>
