@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import styled from "styled-components";
 import 'font-awesome/css/font-awesome.min.css';
 import img from '../bckg.jpg';
+import img2 from '../opt.png';
 
 class Contact extends Component{
   constructor(props) {
@@ -54,9 +55,8 @@ class Contact extends Component{
       <hr />
       <div id="contactsection">
       <div className="leftsection">
-        <article>
+        <article id="left-text">
           Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, random questions about the universe and the meaning of life, or to have a coffee with me... just feel free to drop me a line anytime.
-
           <p style={{textAlign: 'center'}}>I promise to reply A.S.A.P.</p>
         </article>	
       </div>
@@ -115,15 +115,14 @@ const Wrapper = styled.div`
 
   form p{
     font-size: 1.5rem;
-    margin-top: 0;
+    // margin-top: 0;
   }
 
   article p, .titles{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: italic;
-    font-size: 1.3rem;
     line-height: 1.5rem;
-    text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
+    text-shadow: 0px 0px 0px ##969aa9, 1px 0px 0px #f4f3f74a;
   }
 
   i.fa{
@@ -160,7 +159,15 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-around;
     border-radius: 1rem;
-    background-color: #add8e6;
+    // background-color: #add8e6;
+    color: white;
+    height: 100%;
+    background-image: url(${img2});
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 1;
+    letter-spacing: 0.1rem;
   }
 
   .rightsection{
@@ -271,6 +278,7 @@ const Wrapper = styled.div`
     line-height: 1.5rem;
     text-shadow: 0px 0px 0px #fff, 1px 0px 0px #000;
   }
+
 
   @media only screen and (min-width: 1180px) {
     #contactsection{

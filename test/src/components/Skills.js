@@ -4,6 +4,9 @@ import styled from "styled-components";
 let Skills = () => {
   return (
     <Wrapper>
+      <section id="skillset">
+        <img src="./images/codingbckg.png" alt="background" />
+      </section>
       <section id="other">
         <p className="title">Technologies I worked with</p>
         <hr />
@@ -67,7 +70,7 @@ let Skills = () => {
         </div>
       </section>
       <section id="skills">
-        <p className="title">Skills I picked up while working for AT&T</p>
+        <p className="title">Skills I have developed through work experience</p>
         <hr />
         <div id="projects">
           <div className="tooltip card"><a rel="nofolow noopener noreferrer" target="_blank" className="github" href="https://www.youracclaim.com/badges/f1f4c0e4-6557-4613-8fd0-418b6a4b40b3/public_url">
@@ -114,10 +117,10 @@ const Wrapper = styled.div`
   // background-color: #fff;
   padding: 20px;
 
-  #other{
-    border: 3px solid blue;
-    margin-bottom: 1rem;
-  }
+  // #other{
+  //   border: 3px solid blue;
+  //   margin-bottom: 1rem;
+  // }
 
   .logo{
     margin-top: 1rem;
@@ -158,10 +161,10 @@ const Wrapper = styled.div`
     font-size: 1.5rem;
   }
 
-  #skills{
-    margin-top: 1rem;
-    border: 3px solid blue;
-  }
+  // #skills{
+  //   margin-top: 1rem;
+  //   border: 3px solid blue;
+  // }
 
   .card img{
     width: 8rem;
@@ -169,6 +172,22 @@ const Wrapper = styled.div`
 
   #projects{
     text-align: center;
+  }
+
+  #skillset{
+    max-width: 100%;
+    position: fixed;
+    opacity: 0.15;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+  }
+
+  #skillset img{
+    max-width: 100%;
+    min-height: 100%;
   }
 
   @media only screen and (min-width: 780px){
