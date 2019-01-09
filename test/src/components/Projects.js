@@ -83,6 +83,26 @@ const Projects = () => {
         </p>
       </div>
     </div>
+
+    <div className="cardWrapper">
+      <p className="titles">Markdown Previewer</p>
+      <div className="item-space"> 
+        <figure>
+            <img src="./images/Portfolio/previewer.png" alt="Previewer scresnshot" />  
+            <figcaption>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/previewer">
+                  <h3>Previewer - click on me</h3>
+                </a>
+                <span className="fixer">FreeCodeCamp project "Markdown Previewer". <br /> Built with Gatsby, React, React-Marked</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/previewer" className="button">GitHub</a>
+            </figcaption>
+        </figure>
+        <p className="desc">
+          FreeCodeCamp Front-End project
+        </p>
+      </div>
+    </div>
+
     </div>
     </Wrapper>
   );
@@ -131,7 +151,7 @@ const Wrapper = styled.div`
   }
   
   .item-space figure {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0;
     position: relative;
     border: 3px solid #f5f5f5;
@@ -141,6 +161,8 @@ const Wrapper = styled.div`
     max-width: 100%;
     display: block;
     position: relative;
+    transition: transform 0.4s;
+    min-height: 300px;
   }
   
   .item-space figcaption {
@@ -162,10 +184,6 @@ const Wrapper = styled.div`
     overflow: hidden;
   }
   
-  .item-space figure img {
-    transition: transform 0.4s;
-  }
-  
   .item-space figure:hover img{
     transform: translateY(-25px) scaleX(1.01);
   }
@@ -179,8 +197,14 @@ const Wrapper = styled.div`
     color: #fff;
   }
 
+  #github-link:hover {
+    color: #000;
+  }
+
+
   figcaption #github-link{
     text-decoration: none;
+
   }
 
   .button{
@@ -191,7 +215,7 @@ const Wrapper = styled.div`
 
   .button:hover {
     background: white;
-    color: #000;
+    // color: #000;
   }
   
   .item-space figcaption {
