@@ -34,23 +34,6 @@ const Projects = () => {
     </div>
 
     <div className="cardWrapper">
-      <p className="titles">Full-Stack Project</p>  
-      <div className="item-space">
-        <figure>
-            <img src="./images/Portfolio/locdocscreenshot.png" alt="Loc Doc Screenshot" />
-            <figcaption>
-                <h3>LocDoc</h3>
-                <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
-                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
-            </figcaption>
-        </figure>
-        <p className="desc">
-          LocDoc - A powerful tool that enables the user to find a local doctor
-        </p>
-      </div>
-    </div>
-
-    <div className="cardWrapper">
       <p className="titles">Front-End Project</p>  
       <div className="item-space">
         <figure>
@@ -65,6 +48,23 @@ const Projects = () => {
         </figure>
         <p className="desc">
           Focus! - A timer based on the Pomodoro time management technique that includes entertainment
+        </p>
+      </div>
+    </div>
+
+    <div className="cardWrapper">
+      <p className="titles">Full-Stack Project</p>  
+      <div className="item-space">
+        <figure>
+            <img src="./images/Portfolio/locdocscreenshot.png" alt="Loc Doc Screenshot" />
+            <figcaption>
+                <h3>LocDoc</h3>
+                <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
+            </figcaption>
+        </figure>
+        <p className="desc">
+          LocDoc - A powerful tool that enables the user to find a local doctor
         </p>
       </div>
     </div>
