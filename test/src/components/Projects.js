@@ -54,11 +54,13 @@ const Projects = () => {
       <p className="titles">Front-End Project</p>  
       <div className="item-space">
         <figure>
-            <img src="./images/Portfolio/focus.png" alt="Focus! Screenshot" />
+            <img src="./images/Portfolio/focus.png" alt="focus Screenshot" />
             <figcaption>
-                <h3>Focus!</h3>
-                <span className="fixer">Front End Project <br />HTML, Bootstrap/CSS, jQuery</span>
-                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/Focus" className="button">GitHub</a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/focus">
+                  <h3>focus - click on me</h3>
+                </a>
+                <span className="fixer">Front End Project <br />HTML, CSS, JavaScript, jQuery</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/focus/" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
