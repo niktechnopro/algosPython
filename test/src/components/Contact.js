@@ -164,10 +164,16 @@ const Wrapper = styled.div`
     height: 100%;
     background-image: url(${img2});
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
-    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover !important;
     letter-spacing: 0.1rem;
+    max-width:100%;
+    max-height:100%;
+    width:auto;
   }
 
   .rightsection{

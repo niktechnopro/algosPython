@@ -42,7 +42,7 @@ const Projects = () => {
             <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/focus">
                   <h3>focus - click on me</h3>
                 </a>
-                <span className="fixer">Front End Project <br />HTML, CSS, JavaScript, jQuery</span>
+                <span className="fixer">Front End Project <br /> Built with HTML, CSS, JavaScript, jQuery</span>
                 <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/focus/" className="button">GitHub</a>
             </figcaption>
         </figure>
