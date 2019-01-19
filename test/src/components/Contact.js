@@ -154,15 +154,14 @@ const Wrapper = styled.div`
   }
 
   #contactsection{
+    background-image: url(${img2});
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 1rem;
-    // background-color: #add8e6;
     color: white;
     height: 100%;
-    background-image: url(${img2});
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -171,9 +170,6 @@ const Wrapper = styled.div`
     -o-background-size: cover;
     background-size: cover !important;
     letter-spacing: 0.1rem;
-    max-width:100%;
-    max-height:100%;
-    width:auto;
   }
 
   .rightsection{
