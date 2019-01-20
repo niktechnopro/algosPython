@@ -20,7 +20,7 @@ const Projects = () => {
         <figure>
             <img src="./images/Portfolio/wisdomBox.png" alt="Village scresnshot" />  
             <figcaption>
-                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/wisdombox">
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/wisdombox/">
                   <h3>Wisdom Box - click on me</h3>
                 </a>
                 <span className="fixer">FreeCodeCamp project "Quotemachine". <br /> Built with React+Redux, Animate CSS</span>
@@ -34,12 +34,12 @@ const Projects = () => {
     </div>
 
     <div className="cardWrapper">
-      <p className="titles">Front-End Project</p>  
+      <p className="titles">Pomodoro Clock</p>  
       <div className="item-space">
         <figure>
             <img src="./images/Portfolio/focus.png" alt="focus Screenshot" />
             <figcaption>
-            <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/focus">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/focus/">
                   <h3>focus - click on me</h3>
                 </a>
                 <span className="fixer">Front End Project <br /> Built with HTML, CSS, JavaScript, jQuery</span>
@@ -92,7 +92,7 @@ const Projects = () => {
         <figure>
             <img src="./images/Portfolio/previewer.png" alt="Previewer scresnshot" />  
             <figcaption>
-                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/previewer">
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/previewer/">
                   <h3>Previewer - click on me</h3>
                 </a>
                 <span className="fixer">FreeCodeCamp project "Markdown Previewer". <br /> Built with Gatsby, React, React-Marked</span>
@@ -101,6 +101,25 @@ const Projects = () => {
         </figure>
         <p className="desc">
           FreeCodeCamp Front-End project
+        </p>
+      </div>
+    </div>
+
+    <div className="cardWrapper">
+      <p className="titles">Cisco Basic Commands</p>
+      <div className="item-space"> 
+        <figure>
+            <img src="./images/Portfolio/ciscotechpage.png" alt="Previewer scresnshot" />  
+            <figcaption>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/techcisco/">
+                  <h3>Cisco basic commands - click on me</h3>
+                </a>
+                <span className="fixer">FreeCodeCamp project "Technical Docs Page". <br /> Built with HTML, CSS</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/Responsive%20Web%20Design%20Projects/TechnicalDocumentationPage" className="button">GitHub</a>
+            </figcaption>
+        </figure>
+        <p className="desc">
+          FreeCodeCamp Technical Documentation Page project
         </p>
       </div>
     </div>
@@ -131,6 +150,7 @@ const Wrapper = styled.div`
     min-height: 100%;
     // height: auto;
   }
+
 
   .cardWrapper{
     margin: 0 auto;
@@ -272,6 +292,10 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+
+    .cardWrapper{
+      padding: 1rem;
     }
 
     .title{

@@ -133,6 +133,20 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 340px) {
+    li {
+    display: inline-block;
+    padding: 0.2rem;
+
+    a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #333;
+      font-weight: 600;
+    }
+  }
+  }
 `;
 
 export default Header;

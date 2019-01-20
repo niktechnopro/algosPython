@@ -179,7 +179,7 @@ const Wrapper = styled.div`
     position: fixed;
     opacity: 0.15;
     height: 100%;
-    margin: 0;
+    margin: 0 0 0 -2rem;
     padding: 0;
     overflow: hidden;
     top: 0;
