@@ -52,36 +52,77 @@ const Projects = () => {
       </div>
     </div>
 
+    {
+    //   <div className="cardWrapper">
+    //   <p className="titles">Full-Stack Project</p>  
+    //   <div className="item-space">
+    //     <figure>
+    //         <img src="./images/Portfolio/locdocscreenshot.png" alt="Loc Doc Screenshot" />
+    //         <figcaption>
+    //             <h3>LocDoc</h3>
+    //             <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
+    //             <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
+    //         </figcaption>
+    //     </figure>
+    //     <p className="desc">
+    //       LocDoc - A powerful tool that enables the user to find a local doctor
+    //     </p>
+    //   </div>
+    // </div>
+    }
+
+    <div className="cardWrapper">
+      <p className="titles">My Drum Machine</p>
+      <div className="item-space"> 
+        <figure>
+            <img src="./images/Portfolio/drummachine.png" alt="My drum machine screenshot" />  
+            <figcaption>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/drummachine/">
+                  <h3>My Drum Machine - click on me</h3>
+                </a>
+                <span className="fixer">FreeCodeCamp project "Drummachine". <br /> Built with React.js</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/FrontEndLibraryProjects/drummachine" className="button">GitHub</a>
+            </figcaption>
+        </figure>
+        <p className="desc">
+          My Drum Machine - FreeCodeCamp project
+        </p>
+      </div>
+    </div>
+    {
+    // <div className="cardWrapper">
+    //   <p className="titles">Hackathon Project</p>  
+    //   <div className="item-space">
+    //     <figure>
+    //         <img src="./images/Portfolio/village.png" alt="Village scresnshot" />
+    //         <figcaption>
+    //             <h3>Village</h3>
+    //             <span className="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
+    //             <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
+    //         </figcaption>
+    //     </figure>
+    //     <p className="desc">
+    //       Village - A webapp that builds emotional intelligence in adolescent children
+    //     </p>
+    //   </div>
+    // </div>
+    }
+
     <div className="cardWrapper">
       <p className="titles">Full-Stack Project</p>  
       <div className="item-space">
         <figure>
-            <img src="./images/Portfolio/locdocscreenshot.png" alt="Loc Doc Screenshot" />
+            <img src="./images/Portfolio/weatherapp.png" alt="WeatherApp screenshot" />
             <figcaption>
-                <h3>LocDoc</h3>
-                <span className="fixer">React Redux NodeJS <br/>Geolocation API and Doctor API Project</span>
-                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/LocDoc" className="button">GitHub</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/weatherapp/">
+                  <h3>My WeatherApp - click on me</h3>
+                </a>
+                <span className="fixer">Full-Stack Project, <br /> React.js + Redux, Node.js + Express, <br />Google API + OpenWeather.org API</span>
+                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/FreeCodeCamp/tree/master/MISC/weatherapp" className="button">GitHub</a>
             </figcaption>
         </figure>
         <p className="desc">
-          LocDoc - A powerful tool that enables the user to find a local doctor
-        </p>
-      </div>
-    </div>
-
-    <div className="cardWrapper">
-      <p className="titles">Hackathon Project</p>  
-      <div className="item-space">
-        <figure>
-            <img src="./images/Portfolio/village.png" alt="Village scresnshot" />
-            <figcaption>
-                <h3>Village</h3>
-                <span className="fixer">Hackaton against violence Project , HTML, <br /> Bootstrap/CSS, jQuery, Node.js, Express, MySQL</span>
-                <a id="github-link" target="_blank" rel="nofolow noopener noreferrer" href="https://github.com/niktechnopro/Village" className="button">GitHub</a>
-            </figcaption>
-        </figure>
-        <p className="desc">
-          Village - A webapp that builds emotional intelligence in adolescent children
+          My Weather App - A Full-Stack webapp, based on Google and OpenWeather APIs 
         </p>
       </div>
     </div>
@@ -90,7 +131,7 @@ const Projects = () => {
       <p className="titles">Markdown Previewer</p>
       <div className="item-space"> 
         <figure>
-            <img src="./images/Portfolio/previewer.png" alt="Previewer scresnshot" />  
+            <img src="./images/Portfolio/previewer.png" alt="Previewer screenshot" />  
             <figcaption>
                 <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/previewer/">
                   <h3>Previewer - click on me</h3>
@@ -109,7 +150,7 @@ const Projects = () => {
       <p className="titles">Cisco Basic Commands</p>
       <div className="item-space"> 
         <figure>
-            <img src="./images/Portfolio/ciscotechpage.png" alt="Previewer scresnshot" />  
+            <img src="./images/Portfolio/ciscotechpage.png" alt="Previewer screenshot" />  
             <figcaption>
                 <a rel="noopener noreferrer" target="_blank" href="https://www.niktechnopro.com/demos/techcisco/">
                   <h3>Cisco basic commands - click on me</h3>
